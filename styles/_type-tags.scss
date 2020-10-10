@@ -1,0 +1,52 @@
+h1 {
+    color: $primaryColor;
+    font-family: $fontStack;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 4em;
+    line-height: 1.06;
+    letter-spacing: -0.06em;
+}
+h2 {
+  color: $primaryColor;
+  font-family: $fontStack;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 3em;
+  line-height: 1.06;
+  letter-spacing: -0.06em;
+}
+p {
+  color: $primaryColor;
+  font-family: $fontStack;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.8em;
+  line-height: 1.3;
+  letter-spacing: -0.05em;
+}
+@media screen and (max-width: 968px) {
+  h1 {
+    font-size: 3.5em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 760px) {
+  h1 {
+    font-size: 3em;
+  }
+  p {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 2.1em;
+  }
+  p {
+    font-size: 1.1em;
+  }
+}
+

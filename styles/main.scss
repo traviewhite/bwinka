@@ -1,0 +1,108 @@
+$primaryColor: #006C66;
+$secondaryColor: #75C69A;
+$highlightColor: #DBFFEB;
+
+$fontStack: ivystyle-sans,sans-serif;
+
+@import "./type-tags";
+@import "./navbar";
+@import "./about";
+@import "./design";
+@import "./illustration";
+@import "./footer";
+
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #DBFFEB 3.65%, #FFE2E2 100%);
+}
+
+
+main {
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 980px;
+  width: 100%;
+  height: 100%;
+}
+.homewrapper {
+  margin: 0 0 10%;
+}
+.uxwrapper {
+  max-width: 700px;
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    max-width: 420px;
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homewrapper {
+    margin: 0 0 30%;
+  }
+}
+
+
+
+.gone {
+  height: 10%;
+}
+@media screen and (max-width: 1080px) {
+  .gone {
+    height: 15%;
+  }
+}
+
+.gallerywrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .next,
+  .prev {
+    top: calc(50% - 20px);
+    position: absolute;
+    background: $secondaryColor;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2em;
+    z-index: 2;
+  }
+
+  .next {
+    color: $highlightColor;
+    right: 20px;
+  }
+
+  .prev {
+    color: $highlightColor;
+    left: 20px;
+    transform: scale(-1);
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+}
+
+
+
+

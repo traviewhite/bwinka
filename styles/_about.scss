@@ -1,0 +1,113 @@
+
+.aboutwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 48%;
+      height: 400px;
+      object-fit: contain;
+    }
+    .description {
+      width: 48%;
+      h2 {
+        font-size: 2.6em;
+      }
+      p {
+        font-size: 1.1em;
+        line-height: 25px;
+        letter-spacing: -.06px;
+      }
+      .emailbtn {
+        display: block;
+        padding: 15px 3em 14px;
+        max-width: 300px;
+        margin: 2.5em auto;
+        border-radius: 60px;
+        box-shadow: 2px 2px 3px  $secondaryColor;
+        background-color: $primaryColor;
+        color: $highlightColor;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: -0.5px;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.9;
+        }
+      }
+    }
+}
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    width: auto;
+    font-size: 2em;
+    padding: 1.5em 0 0;
+    a {
+        margin: 0 0.5em;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .aboutwrapper {
+        display: flex;
+        flex-direction: column;
+        img {
+        margin-top: 1em;
+        width: auto;
+        height: 300px;
+        }
+        .description {
+        max-width: 700px;
+        padding: 1em 1em 1em;
+        width: 100%;
+        h2 {
+            font-size: 2.6em;
+            margin: 0 auto 0;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 25px;
+            letter-spacing: -.06px;
+        }
+        }
+    }
+    .socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+        width: auto;
+        font-size: 2em;
+        padding: 0;
+        a {
+        }
+    }
+}
+@media screen and (max-width: 620px) {
+    .aboutwrapper {
+        img {
+            margin-top: 1em;
+            padding: 0;
+            width: 100%;
+            height: auto;
+        }
+        .description {
+            padding: 2em 0 1em;
+        h2 {
+            font-size: 2em;
+            margin: 0 auto;
+            span {
+            font-size: 1.4em;
+            }
+        }
+        p {
+            padding: 0 0.5em;
+        }
+        }
+    }
+}

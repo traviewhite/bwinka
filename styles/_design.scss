@@ -1,0 +1,115 @@
+
+
+.scrolltag {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: rotate(90deg);
+    p {
+        font-size: 0.8em;
+        letter-spacing: 1px;
+        font-weight: 500;
+        line-height: 0;
+    }
+}
+  
+.gallery {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    .item {
+        height: 180px;
+        width: 100%;
+        margin: 1em 0;
+        background-image: url(../public/button1copy.png);
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        }
+    }
+    .item2 {
+        height: 180px;
+        width: 100%;
+        margin: 1em 0;
+        background-image: url(../public/personalwebbutton.png);
+        background-color: $primaryColor;
+        box-shadow: inset 3px 8px 12px rgb(0, 0, 0, 0.3);
+        border-radius: 999px;
+        background-position: center right -60px;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        h2 {
+            color: $highlightColor;
+            font-size: 1.6em;
+            letter-spacing: 0.04px;
+            line-height: 1;
+            margin: 0 0 0 2.5em;
+        }
+
+        &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        }
+    }
+}
+@media screen and (max-width: 760px) {
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        .item {
+            height: 130px;
+            width: 100%;
+            margin: 1em 0;
+            background-image: url(../public/button1copy.png);
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+    
+            &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+            }
+        }
+        .item2 {
+            padding: 0;
+            margin: 1em 0;
+            height: 120px;
+            width: 100%;
+            background-image: url(../public/personalwebbutton.png);
+            background-color: $primaryColor;
+            box-shadow: inset 3px 8px 12px rgb(0, 0, 0, 0.3);
+            border-radius: 999px;
+            background-position: center right -60px;
+            background-size: 70%;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            h2 {
+                margin: 0 0 0 2em;
+                color: $highlightColor;
+                font-size: 1.4em;
+                letter-spacing: 0.04px;
+                line-height: 1;
+            }
+    
+            &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+            }
+        }
+    }
+}
+  

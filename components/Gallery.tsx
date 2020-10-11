@@ -7,23 +7,21 @@ import { images } from './image_data'
 
 
 const variants = {
-  enter: (direction: number) => {
+  enter: () => {
     return {
-      x: direction > 0 ? 1000 : -1000,
+      zIndex: 0,
       opacity: 0
     };
   },
   center: () => {
     return {
       zIndex: 1,
-      x: 0,
       opacity: 1
     };
   },
-  exit: (direction: number) => {
+  exit: () => {
     return {
       zIndex: 0,
-      x: direction < 0 ? 1000 : -1000,
       opacity: 0
     };
   }
@@ -55,8 +53,7 @@ export const Gallery = () => {
           animate="center"
           exit="exit"
           transition={{
-            x: { type: "inertia" },
-            opacity: { duration: 0.1 }
+            opacity: { type: "spring", duration: 0 }
           }}
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}

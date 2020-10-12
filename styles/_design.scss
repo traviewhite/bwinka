@@ -1,4 +1,53 @@
 
+.design_head {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 5em 0;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid $secondaryNavColor;
+    p {
+        font-size: 1em;
+        text-align: center;
+        max-width: 600px;
+        line-height: 1.5;
+    }
+}
+.slide_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid $secondaryNavColor;
+    img {
+        max-width: 500px;
+        padding: 2em 0;
+    }
+}
+.next_page_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0 -1em;
+    p {
+        display: block;
+        border-radius: 999px;
+        background-color: $primaryColor;
+        color: $primary3Color;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 600;
+        letter-spacing: -1px;
+        padding: 5px 1em 8px;
+        box-shadow: 1px 2px 3px 1px $primary2Color;
+        
+    }
+}
+
 
 .scrolltag {
     position: absolute;
@@ -23,23 +72,9 @@
         height: 180px;
         width: 100%;
         margin: 1em 0;
-        background-image: url(../public/button1copy.png);
-        background-position: center center;
-        background-size: contain;
-        background-repeat: no-repeat;
-
-        &:hover {
-        opacity: 0.8;
-        cursor: pointer;
-        }
-    }
-    .item2 {
-        height: 180px;
-        width: 100%;
-        margin: 1em 0;
-        background-image: url(../public/personalwebbutton.png);
+        //background-image: url(../public/personalwebbutton.png);
         background-color: $primaryColor;
-        box-shadow: inset 3px 8px 12px rgb(0, 0, 0, 0.3);
+        box-shadow: inset 3px 8px 10px 2px rgba(0, 71, 56, 0.8);
         border-radius: 999px;
         background-position: center right -60px;
         background-size: 70%;
@@ -48,7 +83,7 @@
         flex-direction: row;
         align-items: center;
         h2 {
-            color: $highlightColor;
+            color: $primary3Color;
             font-size: 1.6em;
             letter-spacing: 0.04px;
             line-height: 1;
@@ -56,8 +91,9 @@
         }
 
         &:hover {
-        opacity: 0.8;
-        cursor: pointer;
+            cursor: pointer;
+            //box-shadow: 0 0 0 1pt $highlightColor inset;
+            border: 1px solid $highlightColor;
         }
     }
 }
@@ -78,8 +114,6 @@
             background-repeat: no-repeat;
     
             &:hover {
-            opacity: 0.8;
-            cursor: pointer;
             }
         }
         .item2 {
@@ -87,27 +121,20 @@
             margin: 1em 0;
             height: 120px;
             width: 100%;
-            background-image: url(../public/personalwebbutton.png);
-            background-color: $primaryColor;
-            box-shadow: inset 3px 8px 12px rgb(0, 0, 0, 0.3);
             border-radius: 999px;
             background-position: center right -60px;
             background-size: 70%;
             background-repeat: no-repeat;
-            display: flex;
             flex-direction: row;
             align-items: center;
             h2 {
                 margin: 0 0 0 2em;
-                color: $highlightColor;
                 font-size: 1.4em;
                 letter-spacing: 0.04px;
                 line-height: 1;
             }
     
             &:hover {
-            opacity: 0.8;
-            cursor: pointer;
             }
         }
     }

@@ -24,10 +24,10 @@ const About = () => (
               <p>Wanna make something together? Wanna be friends? Regardless, I can’t wait to hear from you!</p>
               <div className="aboutbtnwrapper">
                 <div className="aboutbtn">
-                  <a>EMAIL ME</a>
+                  <a href="mailto:winkabrooke@gmail.com?Subject=Whats%20up!">EMAIL ME</a>
                 </div>
                 <div className="aboutbtn">
-                  <a>PDF OF PORTFOLIO</a>
+                  <a href="#">PORTFOLIO</a>
                 </div>
               </div>
             </div>

@@ -35,8 +35,8 @@ const Links = () => (
     </motion.li>
 
     <motion.li variants={variants}>
-      <Link href="/ux-ui">
-        <a>UX/UI</a>
+      <Link href="/fine-art">
+        <a>Fine Art</a>
       </Link>
     </motion.li>
     

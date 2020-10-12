@@ -71,10 +71,10 @@ export const Gallery = () => {
       </AnimatePresence>
 
       <div className="next" onClick={() => paginate(1)}>
-        {"‣"}
+        {<img src="../slidebtn1.svg" />}
       </div>
       <div className="prev" onClick={() => paginate(-1)}>
-        {"‣"}
+        {<img src="../slidebtn1.svg" />}
       </div>
           
     </>

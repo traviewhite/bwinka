@@ -25,7 +25,7 @@ const Design = () => (
             <Link href="/design/personal-brand-identity">
               <div style={imageStyle} className="item" ><h2>PERSONAL<br/>IDENTITY<br/>DESIGN</h2></div>
             </Link>
-            <Link href="/">
+            <Link href="/design/eiu-housing-dining">
               <div style={imageStyle2} className="item"><h2>EIU HOUSING<br/>& DINING SERVICES</h2></div>
             </Link>
             <Link href="/">

@@ -23,7 +23,7 @@ nav {
             padding: 10px 24px 8px;
             z-index: 2;
             animation: 1s ease;
-            transition: 0.2s;
+            transition: 0.2s ease;
             &:hover {
                 transform: translateX(3px);
             }

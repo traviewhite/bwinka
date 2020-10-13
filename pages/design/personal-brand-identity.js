@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../../components/Layout'
 import { motion } from 'framer-motion'
-import Gallery from '../../components/Gallery'
+import Slideshow from '../../components/Slideshow'
 
 const PersonalBrand = () => (
     <>
@@ -17,7 +17,7 @@ const PersonalBrand = () => (
           <p>I wanted my brand to reflect the principles that are fundamental to my design philosophy : clarity, personality,</p>
         </div>
         <div className="slide_wrapper">
-          <img src="../Untitled_Artwork 4.png" />
+          <Slideshow /> 
         </div>
         <div className="next_page_btn">
           <p>next one</p>

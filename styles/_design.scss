@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 5em 0;
+    padding: 5em 1em;
     width: 100%;
     height: auto;
     justify-content: center;
@@ -16,19 +16,46 @@
         line-height: 1.5;
     }
 }
+
 .slide_wrapper {
-    display: flex;
-    flex-direction: column;
     width: 100%;
+    height: 90vh;
+    padding: 1em 3em 1em;
+    position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     border-bottom: 2px solid $secondaryNavColor;
-    img {
-        max-width: 500px;
-        width: 100%;
-        padding: 2em 0;
+    .next,
+    .prev {
+      top: calc(50% - 20px);
+      position: absolute;
+      background: $primary2Color;
+      border-radius: 99px;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+      cursor: pointer;
+      z-index: 2;
     }
+    .next {
+      right: 20px;
+    }
+    .prev {
+      left: 20px;
+      transform: scale(-1);
+    }
+    img {
+      max-width: 100%;
+      max-height: 80vh;
+    }
+  
 }
+
 .next_page_btn {
     display: flex;
     justify-content: center;
@@ -99,6 +126,38 @@
     }
 }
 @media screen and (max-width: 760px) {
+    
+    .slide_wrapper {
+        .next,
+        .prev {
+        top: calc(50% - 20px);
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        cursor: pointer;
+        z-index: 2;
+        }
+    
+        .next {
+        position: absolute;
+        right: 10px;
+        }
+    
+        .prev {
+        position: absolute;
+        left: 10px;
+        transform: scale(-1);
+        }
+    
+        img {
+        max-width: 100%;
+        max-height: 80vh;
+        }
+    }   
     .gallery {
         display: flex;
         flex-direction: column;

@@ -27,10 +27,7 @@ const variants = {
   }
 };
 
-const swipeConfidenceThreshold = 10000;
-const swipePower = (offset: number, velocity: number) => {
-  return Math.abs(offset) * velocity;
-};
+
 
 export const Gallery = () => {
   const [[page, direction], setPage] = useState([0, 0]);
@@ -39,7 +36,6 @@ export const Gallery = () => {
   const paginate = (newDirection: number) => {
     setPage([page + newDirection, newDirection]);
   };
-  
 
   return (
     <>
@@ -81,8 +77,12 @@ export const Gallery = () => {
   );
 };
 
-
-
 export default Gallery
 
 
+
+
+const swipeConfidenceThreshold = 10000;
+const swipePower = (offset: number, velocity: number) => {
+  return Math.abs(offset) * velocity;
+};

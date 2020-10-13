@@ -69,6 +69,7 @@ main {
 .gallerywrapper {
   width: 100%;
   height: auto;
+  padding: 0 1em;
   position: relative;
   display: flex;
   justify-content: center;
@@ -78,26 +79,22 @@ main {
     top: calc(50% - 20px);
     position: absolute;
     background: $primary2Color;
-    border-radius: 30px;
-    width: 40px;
-    height: 40px;
+    border-radius: 99px;
+    width: 35px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     user-select: none;
     cursor: pointer;
-    font-weight: bold;
-    font-size: 2em;
     z-index: 2;
   }
 
   .next {
-    position: fixed;
     right: 20px;
   }
 
   .prev {
-    position: fixed;
     left: 20px;
     transform: scale(-1);
   }
@@ -108,7 +105,24 @@ main {
   }
 
 }
-
+@media screen and (max-width: 760px) {
+  .gallerywrapper {
+    padding: 0 2em;
+    .next,
+    .prev {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .next {
+      right: 0px;
+    }
+  
+    .prev {
+      left: 0px;
+    }
+  }
+}
 
 
 

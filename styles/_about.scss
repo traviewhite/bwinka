@@ -31,14 +31,16 @@
                 border-radius: 60px;
                 box-shadow: 2px 2px 3px  $secondaryColor;
                 background-color: $primaryColor;
-                color: $highlightColor;
+                color: $primary3Color;
                 font-size: 16px;
                 font-weight: bold;
                 text-align: center;
                 letter-spacing: -0.5px;
+                animation: 1s ease;
+                transition: 0.1s ease;
                 &:hover {
                     cursor: pointer;
-                    opacity: 0.9;
+                    background-color: $secondary2Color;
                 }
             }
         }
@@ -57,6 +59,11 @@
         margin: 0 0.9em;
         img {
             width: 25px;
+            animation: 1s ease;
+            transition: 0.1s ease;
+            &:hover {
+                transform: translateY(-2px);
+            }
         }
     }
 }

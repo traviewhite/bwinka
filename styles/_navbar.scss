@@ -35,15 +35,20 @@ nav {
         align-items: center;
         width: 100%;
         a {
-            padding-right: 1.6em;
+            margin-right: 1.6em;
             font-family: $fontStack;
             font-weight: bold;
             color: $primaryColor;
             font-size: 1.2em;
             letter-spacing: -0.5px;
+            animation: 1s ease;
+            transition: 0.1s ease;
         }
         a:hover {
-            color: $secondaryColor;
+            color: $secondary2Color;
+            border-bottom: 2px solid $secondary2Color;
+            transform: translateY(1px);
+
         }
         .aboutbtn {
             display: block;
@@ -55,6 +60,8 @@ nav {
             color: $primaryColor;
             font-size: 18px;
             letter-spacing: -0.5px;
+            animation: 2s ease;
+            transition: 0.2s ease;
             &:hover {
                 cursor: pointer;
                 border: 0px;

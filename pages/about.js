@@ -35,27 +35,27 @@ const About = () => (
           </div>
           
           <div className="socials">
-            <Link href="/">
+            <Link href="https://www.instagram.com/btwinka">
               <a>
                 <img src="../icons/instagram.svg" />
               </a>
             </Link>
-            <Link href="/">
+            <Link href="https://www.behance.net/winkabrook63b6">
               <a>
                 <img style={{width: '29px'}} src="../icons/behance.svg" />
               </a>
             </Link>
-            <Link href="/">
+            <Link href="https://dribbble.com/btwinka">
               <a>
                <img src="../icons/dribbble.svg" />
               </a>
             </Link>
-            <Link href="/">
+            <Link href="https://linkedin.com/in/brooke-winka-972b191b6">
               <a>
                 <img style={{width: '24px'}} src="../icons/linkedin.svg" />
               </a>
             </Link>
-            <Link href="/">
+            <Link href="https://twitter.com/btwinka">
               <a>
                 <img style={{width: '26px'}} src="../icons/twitter.svg" />
               </a>

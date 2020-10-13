@@ -14,8 +14,12 @@
 /build
 
 # misc
-.DS_Store
+*.DS_Store
 *.pem
+/public/fine_art/*
+/public/design/*
+!/public/design/bwinka/
+!/public/design/bwinka/*
 
 # debug
 npm-debug.log*

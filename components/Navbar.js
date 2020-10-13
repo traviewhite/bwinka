@@ -15,7 +15,7 @@ export const Navbar = () => {
                 <div className="homebtn">
                         <Link href="/">
                             <a className="homebtnlogo">
-                                <img src="../logo.png" alt="Brooke Winka Logo"></img>
+                                <img src="../assets/logo.png" alt="Brooke Winka Logo"></img>
                             </a>
                         </Link>
                 </div>

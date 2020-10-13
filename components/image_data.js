@@ -14,3 +14,19 @@ export const bwinkaSlide = [
     "https://res.cloudinary.com/bwinka/image/upload/v1602553984/design/bwinka/badge_ry0bhm.png"
 
 ];
+export const fineartSlide = [
+    "https://res.cloudinary.com/bwinka/image/upload/v1602615704/fine_art/cross_tdvzi1.jpg",
+    "https://res.cloudinary.com/bwinka/image/upload/v1602615708/fine_art/stacks_cenihg.jpg",
+    "https://res.cloudinary.com/bwinka/image/upload/v1602615701/fine_art/kate_apufna.jpg",
+    "https://res.cloudinary.com/bwinka/image/upload/v1602615705/fine_art/studio3._yjuvd3.jpg",
+    "https://res.cloudinary.com/bwinka/image/upload/v1602615705/fine_art/scanner_lrhhch.jpg",
+    "https://res.cloudinary.com/bwinka/image/upload/v1602615704/fine_art/strawberries_r6i4gl.jpg",
+    "https://res.cloudinary.com/bwinka/image/upload/v1602615704/fine_art/christmas_morning_detail_st0daf.jpg",
+    "https://res.cloudinary.com/bwinka/image/upload/v1602615705/fine_art/scanner_detail_n597fc.jpg",
+    "https://res.cloudinary.com/bwinka/image/upload/v1602615703/fine_art/playboys_bvq1eg.jpg",
+    "https://res.cloudinary.com/bwinka/image/upload/v1602615702/fine_art/permanent_vacation_drfc7e.jpg",
+    "https://res.cloudinary.com/bwinka/image/upload/v1602615703/fine_art/pv_detail_whtuwu.jpg",
+    "https://res.cloudinary.com/bwinka/image/upload/v1602615702/fine_art/Dolly_s7ntxa.jpg",
+    "https://res.cloudinary.com/bwinka/image/upload/v1602615701/fine_art/oil_smudge_exfjnx.jpg",
+    "https://res.cloudinary.com/bwinka/image/upload/v1602615701/fine_art/coke_gunznw.jpg"
+];

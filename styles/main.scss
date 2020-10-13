@@ -78,10 +78,10 @@ main {
   .prev {
     top: calc(50% - 20px);
     position: absolute;
-    background: $primary2Color;
+    background: $primary3Color;
     border-radius: 99px;
     width: 35px;
-    height: 35px;
+    height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,7 +111,7 @@ main {
     .next,
     .prev {
       width: 25px;
-      height: 25px;
+      height: 40px;
     }
   
     .next {

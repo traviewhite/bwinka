@@ -3,13 +3,13 @@ import Link from 'next/link'
 import Layout from '../components/Layout'
 import { motion } from 'framer-motion'
 
-const imageStyle = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602552708/design/btn_covers/personaldesignbtn_x3esmp.png"})` };
-const imageStyle2 = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602552708/design/btn_covers/eiubtn_kryuck.png"})` };
-const imageStyle3 = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602552709/design/btn_covers/macdaddybtn_k8dql2.png"})` };
-const imageStyle4 = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602552708/design/btn_covers/calendar2020btn_n1mlat.png"})` };
-const imageStyle5 = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602552708/design/btn_covers/blueroombtn_a8zv3r.png"})` };
-const imageStyle6 = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602552708/design/btn_covers/portlandbtn_nijazs.png"})` };
-const imageStyle7 = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602552709/design/btn_covers/posterbtn_heipsj.png"})` };
+const imageStyle = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613659/design/btn_covers/personaldesignbtn_zgj9x4.png"})` };
+const imageStyle2 = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613659/design/btn_covers/eiubtn_tjboqa.png"})` };
+const imageStyle3 = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613660/design/btn_covers/macdaddybtn_c2qxi2.png"})` };
+const imageStyle4 = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613659/design/btn_covers/calendar2020btn_z11cwx.png"})` };
+const imageStyle5 = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613659/design/btn_covers/blueroombtn_weu4qi.png"})` };
+const imageStyle6 = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613659/design/btn_covers/portlandbtn_nv6dgx.png"})` };
+const imageStyle7 = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613660/design/btn_covers/posterbtn_vwtxzw.png"})` };
 
 
 
@@ -31,9 +31,6 @@ const Design = () => (
             <Link href="/">
               <div style={imageStyle3} className="item"><h2>MAC DADDY'S<br/>IDENTITY + USER<br/>INTERFACE</h2></div>
             </Link>
-            <Link href="/">            
-              <div style={imageStyle4} className="item"><h2>2020<br/>ILLUSTRATED<br/>CALENDAR</h2></div>
-            </Link>
             <Link href="/">
               <div style={imageStyle5} className="item"><h2>BLUEROOM<br/>MAGAZINE</h2></div>
             </Link>
@@ -49,4 +46,4 @@ const Design = () => (
     </>
   );
 
-  export default Design;
+  export default Design

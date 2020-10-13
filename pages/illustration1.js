@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Layout from '../components/Layout'
-import { FineArt } from '../components/Gallery'
+import { Gallery } from '../components/Gallery'
 
 const mainstyle = { overflow: `hidden` };
 
-const fineArt = () => (
+export const Illustration = () => (
     <>
       <Head>
         <title>Brooke Winka</title>
@@ -13,11 +13,10 @@ const fineArt = () => (
       <Layout>
         <main style={mainstyle}>
           <div className="gallerywrapper">
-            <FineArt />
+            <Gallery />
           </div>          
         </main>
       </Layout>
     </>
-  );
-  
-export default fineArt;
+)
+export default Illustration

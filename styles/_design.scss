@@ -116,6 +116,13 @@
             letter-spacing: 0.04px;
             line-height: 1;
             margin: 0 0 0 2.5em;
+            p {
+                color: $primary3Color;
+                font-size: 0.6em;
+                font-weight: 500;
+                letter-spacing: 0.1px;
+                margin: 8px 0 0;
+            }
         }
 
         &:hover {

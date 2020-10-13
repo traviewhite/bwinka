@@ -1,20 +1,31 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Layout from '../components/Layout'
-import Gallery from '../components/Gallery'
+import { motion } from 'framer-motion'
 
-const mainstyle = { overflow: `hidden` };
+const imageStyle1 = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613659/design/btn_covers/calendar2020btn_z11cwx.png"})` }
+const imageStyle2 = { backgroundImage: `url(${""})` }
+const imageStyle3 = { backgroundImage: `url(${""})` }
 
-export const Illustration = () => (
+const Illustration = () => (
     <>
       <Head>
         <title>Brooke Winka</title>
       </Head>
       
       <Layout>
-        <main style={mainstyle}>
-          <div className="gallerywrapper">
-            <Gallery />
-          </div>          
+        <main>
+          <div className="gallery">
+            <Link href="/design/personal-brand-identity">
+              <div style={imageStyle1} className="item" ><h2>2020<br/>ANNIVERSARY<br/>CALENDAR</h2></div>
+            </Link>
+            <Link href="/">
+              <div style={imageStyle2} className="item"><h2>THE TALE OF AN<br/>ANCIENT VILLAGE<br/><p>CHILDREN'S BOOK</p></h2></div>
+            </Link>
+            <Link href="/">
+              <div style={imageStyle3} className="item"><h2>ILLUSTRATION<br/>GALLERY</h2></div>
+            </Link>
+          </div>
         </main>
       </Layout>
     </>

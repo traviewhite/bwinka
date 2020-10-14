@@ -4,8 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { wrap } from '@popmotion/popcorn'
 import { bwinkaSlide } from './image_data'
 
-
-
 const variants = {
   enter: () => {
     return {
@@ -26,8 +24,6 @@ const variants = {
     };
   }
 };
-
-
 
 export const Slideshow = () => {
   const [[page, direction], setPage] = useState([0, 0]);
@@ -72,7 +68,6 @@ export const Slideshow = () => {
       <div className="prev" onClick={() => paginate(-1)}>
         {<img src="../assets/slidebtn.svg" />}
       </div>
-          
     </>
   );
 };
@@ -127,10 +122,7 @@ export const Show = () => {
 
 export default () => {
   return [Slideshow, Show]
-}
-
-
-
+};
 
 const swipeConfidenceThreshold = 10000;
 const swipePower = (offset: number, velocity: number) => {

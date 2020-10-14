@@ -1,19 +1,18 @@
 footer {
-    padding: 1em 0;
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    a {
-        font-family: $fontStack;
-        font-weight: bold;
-        color: brown;
-        margin: 0 1em;
-    }
-    a:hover {
-        color: blue;
-    }
-
+  padding: 1em 0;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  a {
+    font-family: $fontStack;
+    font-weight: bold;
+    color: brown;
+    margin: 0 1em;
+  }
+  a:hover {
+    color: blue;
+  }
 }

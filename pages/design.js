@@ -11,39 +11,37 @@ const imageStyle5 = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka
 const imageStyle6 = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613659/design/btn_covers/portlandbtn_nv6dgx.png"})` };
 const imageStyle7 = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613660/design/btn_covers/posterbtn_vwtxzw.png"})` };
 
-
-
 const Design = () => (
-    <>
-      <Head>
-        <title>Brooke Winka</title>
-      </Head>
-      
-      <Layout>
-        <main>
-          <div className="gallery">
-            <Link href="/design/personal-brand-identity">
-              <div style={imageStyle} className="item" ><h2>PERSONAL<br/>IDENTITY<br/>DESIGN</h2></div>
-            </Link>
-            <Link href="/design/eiu-housing-dining">
-              <div style={imageStyle2} className="item"><h2>EIU HOUSING<br/>& DINING SERVICES</h2></div>
-            </Link>
-            <Link href="/">
-              <div style={imageStyle3} className="item"><h2>MAC DADDY'S<br/>IDENTITY + USER<br/>INTERFACE</h2></div>
-            </Link>
-            <Link href="/">
-              <div style={imageStyle5} className="item"><h2>BLUEROOM<br/>MAGAZINE</h2></div>
-            </Link>
-            <Link href="/">
-              <div style={imageStyle6} className="item"><h2>PORTLAND, OREGON<br/>TRAVEL GUIDE</h2></div>
-            </Link>
-            <Link href="/">
-              <div style={imageStyle7} className="item"><h2>POSTERS +<br/>LETTERING</h2></div>
-            </Link>
-          </div>
-        </main>
-      </Layout>
-    </>
-  );
+  <>
+    <Head>
+      <title>Brooke Winka</title>
+    </Head>
 
-  export default Design
+    <Layout>
+      <main>
+        <div className="showcase">
+          <Link href="/design/personal-brand-identity">
+            <div style={imageStyle} className="item" ><h2>PERSONAL<br/>IDENTITY<br/>DESIGN</h2></div>
+          </Link>
+          <Link href="/design/eiu-housing-dining">
+            <div style={imageStyle2} className="item"><h2>EIU HOUSING<br/>& DINING SERVICES</h2></div>
+          </Link>
+          <Link href="/">
+            <div style={imageStyle3} className="item"><h2>MAC DADDY'S<br/>IDENTITY + USER<br/>INTERFACE</h2></div>
+          </Link>
+          <Link href="/">
+            <div style={imageStyle5} className="item"><h2>BLUEROOM<br/>MAGAZINE</h2></div>
+          </Link>
+          <Link href="/">
+            <div style={imageStyle6} className="item"><h2>PORTLAND, OREGON<br/>TRAVEL GUIDE</h2></div>
+          </Link>
+          <Link href="/">
+            <div style={imageStyle7} className="item"><h2>POSTERS +<br/>LETTERING</h2></div>
+          </Link>
+        </div>
+      </main>
+    </Layout>
+  </>
+)
+
+export default Design

@@ -1,11 +1,11 @@
 import Layout from '../components/Layout'
 import Head from 'next/head'
 
-export default function Home() {
+export default function Home () {
   return (
     <Layout>
       <Head>
-          <title>HOME Brooke Winka</title>
+          <title>Brooke Winka</title>
       </Head>
 
       <main>

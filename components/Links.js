@@ -21,7 +21,7 @@ const variants = {
 const totherightyougo = { marginLeft: `auto` };
 
 const Links = () => (
-    <>
+  <>
     <motion.li variants={variants}>
       <Link href="/design">
         <a>Design</a>

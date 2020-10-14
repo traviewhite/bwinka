@@ -9,13 +9,20 @@ $highlightColor: #DBFFEB;
 
 $fontStack: ivystyle-sans,sans-serif;
 
+$breakpointPhoneSm: 480px;
+$breakpointPhone: 620px;
+$breakpointTablet: 768px;
+$breakpointDesktop: 990px;
+$breakpointDesktopLg: 1260px;
+
 @import "./type-tags";
 @import "./navbar";
+@import "./home";
 @import "./about";
 @import "./design";
 @import "./illustration";
+@import "./gallery";
 @import "./footer";
-
 
 .container {
   min-height: 100vh;
@@ -23,10 +30,7 @@ $fontStack: ivystyle-sans,sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: $primary3Color;
 }
-
-
 main {
   margin: 0 auto;
   padding: 1em;
@@ -34,95 +38,3 @@ main {
   width: 100%;
   height: 100%;
 }
-.homewrapper {
-  margin: 0 0 10%;
-}
-.uxwrapper {
-  max-width: 700px;
-  h2 {
-    font-size: 2em;
-  }
-  p {
-    max-width: 420px;
-    font-size: 1.2em;
-    line-height: 1.5;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .homewrapper {
-    margin: 0 0 30%;
-  }
-}
-
-
-
-.gone {
-  height: 10%;
-}
-@media screen and (max-width: 1080px) {
-  .gone {
-    height: 15%;
-  }
-}
-
-.gallerywrapper {
-  width: 100%;
-  height: auto;
-  padding: 0 1em;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .next,
-  .prev {
-    top: calc(50% - 20px);
-    position: absolute;
-    background: $primary3Color;
-    border-radius: 99px;
-    width: 35px;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-    cursor: pointer;
-    z-index: 2;
-  }
-
-  .next {
-    right: 20px;
-  }
-
-  .prev {
-    left: 20px;
-    transform: scale(-1);
-  }
-
-  img {
-    max-width: 100%;
-    max-height: 80vh;
-  }
-
-}
-@media screen and (max-width: 760px) {
-  .gallerywrapper {
-    padding: 0 2em;
-    .next,
-    .prev {
-      width: 25px;
-      height: 40px;
-    }
-  
-    .next {
-      right: 0px;
-    }
-  
-    .prev {
-      left: 0px;
-    }
-  }
-}
-
-
-

@@ -28,4 +28,4 @@ export default () => (
     <meta name="msapplication-TileColor" content="#da532c"/>
     <meta name="theme-color" content="#131313"/>
   </Head>
-);
+)

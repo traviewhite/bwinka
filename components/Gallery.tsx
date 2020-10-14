@@ -4,8 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { wrap } from '@popmotion/popcorn'
 import { images, fineartSlide } from './image_data'
 
-
-
 const variants = {
   enter: () => {
     return {
@@ -26,8 +24,6 @@ const variants = {
     };
   }
 };
-
-
 
 export const Gallery = () => {
   const [[page, direction], setPage] = useState([0, 0]);
@@ -71,8 +67,7 @@ export const Gallery = () => {
       </div>
       <div className="prev" onClick={() => paginate(-1)}>
         {<img src="../assets/slidebtn.svg" />}
-      </div>
-          
+      </div>   
     </>
   );
 };
@@ -120,14 +115,13 @@ export const FineArt = () => {
       <div className="prev" onClick={() => paginate(-1)}>
         {<img src="../assets/slidebtn.svg" />}
       </div>
-          
     </>
   );
 };
 
 export default () => {
   return [Gallery, FineArt]
-}
+};
 
 
 const swipeConfidenceThreshold = 10000;

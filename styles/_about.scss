@@ -1,178 +1,147 @@
-
 .aboutwrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 48%;
+    height: 400px;
+    object-fit: contain;
+  }
+  .description {
+    width: 48%;
+    h2 {
+      font-size: 2.6em;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 25px;
+      letter-spacing: -.06px;
+    }
+    .aboutbtnwrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .aboutbtn {
+        display: block;
+        padding: 15px 3em 14px;
+        margin: 2.5em auto;
+        border-radius: 60px;
+        box-shadow: 2px 2px 3px  $secondaryColor;
+        background-color: $primaryColor;
+        color: $primary3Color;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: -0.5px;
+        animation: 1s ease;
+        transition: 0.1s ease;
+        &:hover {
+          cursor: pointer;
+          background-color: $secondary2Color;
+        }
+      }
+    }
+  }
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: auto;
+  padding: 1.5em 0 0;
+  a {
+    margin: 0 0.9em;
     img {
-      width: 48%;
-      height: 400px;
-      object-fit: contain;
+      width: 25px;
+      animation: 1s ease;
+      transition: 0.1s ease;
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpointDesktop) {
+  .aboutwrapper {
+    flex-direction: column;
+    img {
+      margin-top: 1em;
+      width: 60vw;
+      height: auto;
     }
     .description {
-      width: 48%;
+      max-width: 700px;
+      padding: 1em 1em 1em;
+      width: 100%;
+      h2 {
+        margin: 0 auto 0;
+      }
+      p {
+        font-size: 1.1em;
+      }
+      .aboutbtnwrapper {
+        .aboutbtn {
+          margin: 2.5em 10px;
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $breakpointTablet) {
+  .aboutwrapper {
+    img {
+      width: 70vw;
+    }
+    .description {
+      padding: 1em 1em 1em;
       h2 {
         font-size: 2.6em;
       }
       p {
         font-size: 1.1em;
-        line-height: 25px;
-        letter-spacing: -.06px;
       }
-        .aboutbtnwrapper {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-            .aboutbtn {
-                display: block;
-                padding: 15px 3em 14px;
-                margin: 2.5em auto;
-                border-radius: 60px;
-                box-shadow: 2px 2px 3px  $secondaryColor;
-                background-color: $primaryColor;
-                color: $primary3Color;
-                font-size: 16px;
-                font-weight: bold;
-                text-align: center;
-                letter-spacing: -0.5px;
-                animation: 1s ease;
-                transition: 0.1s ease;
-                &:hover {
-                    cursor: pointer;
-                    background-color: $secondary2Color;
-                }
-            }
-        }
-
-    } 
-}
-.socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: auto;
-    padding: 1.5em 0 0;
+    }
+  }
+  .socials {
+    padding: 0;
     a {
-        margin: 0 0.9em;
-        img {
-            width: 25px;
-            animation: 1s ease;
-            transition: 0.1s ease;
-            &:hover {
-                transform: translateY(-2px);
-            }
-        }
+      margin: 0 0.75em;
     }
+  }
 }
-@media screen and (max-width: 990px) {
-    .aboutwrapper {
-        display: flex;
-        flex-direction: column;
-        img {
-            margin-top: 1em;
-            width: 60vw;
-            height: auto;
-        }
-        .description {
-        max-width: 700px;
-        padding: 1em 1em 1em;
-        width: 100%;
-        h2 {
-            font-size: 2.6em;
-            margin: 0 auto 0;
-        }
-        p {
-            font-size: 1.1em;
-            line-height: 25px;
-            letter-spacing: -.06px;
-        }
-        .aboutbtnwrapper {
-            .aboutbtn {
-                margin: 2.5em 10px;
-                width: 60%;
-            }
-        }
-        }
+@media screen and (max-width: $breakpointPhone) {
+  .aboutwrapper {
+    img {
+      margin-top: 1em;
+      padding: 0;
+      width: 100%;
+      height: auto;
     }
-    .socials {
-        a {
-        }
-    }
-}
-@media screen and (max-width: 768px) {
-    .aboutwrapper {
-        display: flex;
-        flex-direction: column;
-        img {
-            margin-top: 1em;
-            width: 70vw;
-            height: auto;
-        }
-        .description {
-        max-width: 700px;
-        padding: 1em 1em 1em;
-        width: 100%;
-        h2 {
-            font-size: 2.6em;
-            margin: 0 auto 0;
-        }
-        p {
-            font-size: 1.1em;
-            line-height: 25px;
-            letter-spacing: -.06px;
-        }
-        .aboutbtnwrapper {
-            .aboutbtn {
-                margin: 2.5em 10px;
-                width: 60%;
-            }
-        }
-        }
-    }
-    .socials {
+    .description {
+      padding: 2em 0 1em;
+      h2 {
+        font-size: 2em;
         margin: 0 auto;
-        width: auto;
-        padding: 0;
-        a {
-            margin: 0 0.75em;
+        span {
+          font-size: 1.4em;
         }
+      }
+      p {
+        padding: 0 0.5em;
+      }
+      .aboutbtnwrapper {
+        flex-direction: column;
+        margin: 2em auto 1em;
+        .aboutbtn {
+          margin: .5em auto;
+          width: 70vw;
+        }
+      }
     }
-}
-@media screen and (max-width: 620px) {
-    .aboutwrapper {
-        img {
-            margin-top: 1em;
-            padding: 0;
-            width: 100%;
-            height: auto;
-        }
-        .description {
-            padding: 2em 0 1em;
-        h2 {
-            font-size: 2em;
-            margin: 0 auto;
-            span {
-            font-size: 1.4em;
-            }
-        }
-        p {
-            padding: 0 0.5em;
-        }
-        .aboutbtnwrapper {
-            flex-direction: column;
-            margin: 2em auto 1em;
-
-            .aboutbtn {
-                display: block;
-                padding: 15px 3em 14px;
-                margin: .5em auto;
-                width: 70vw;
-            }
-        }
-
-        }
-    }
+  }
 }

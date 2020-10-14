@@ -1,0 +1,8 @@
+.homewrapper {
+  margin: 0 0 10%;
+}
+@media screen and (max-width: $breakpointPhone) {
+  .homewrapper {
+    margin: 0 0 30%;
+  }
+}

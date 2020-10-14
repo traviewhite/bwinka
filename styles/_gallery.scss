@@ -1,0 +1,53 @@
+.gallerywrapper {
+  width: 100%;
+  height: auto;
+  padding: 0 1em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .next,
+  .prev {
+    top: calc(50% - 20px);
+    position: absolute;
+    background: $primary3Color;
+    border-radius: 99px;
+    width: 35px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .next {
+    right: 20px;
+  }
+  .prev {
+    left: 20px;
+    transform: scale(-1);
+  }
+  img {
+    max-width: 100%;
+    max-height: 80vh;
+  }
+}
+
+@media screen and (max-width: $breakpointDesktop) {
+  .gallerywrapper {
+    padding: 0 2em;
+    .next,
+    .prev {
+      width: 25px;
+      height: 40px;
+    }
+    .next {
+      right: 0px;
+    }
+    .prev {
+      left: 0px;
+    }
+  }
+}
+  

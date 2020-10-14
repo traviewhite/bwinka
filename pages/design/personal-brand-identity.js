@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../../components/Layout'
 import { motion } from 'framer-motion'
-import { Slideshow } from '../../components/Slideshow'
+import { SlideshowBwinka } from '../../components/Slideshow'
 
 const PersonalBrand = () => (
     <>
@@ -17,11 +17,17 @@ const PersonalBrand = () => (
           <p>I wanted my brand to reflect the principles that are fundamental to my design philosophy : clarity, personality,</p>
         </div>
         <div className="slide_wrapper">
-          <Slideshow /> 
+          <SlideshowBwinka /> 
         </div>
-        <div className="next_page_btn">
+        
+        <div className="page_nav_btn">
+        <Link href="/design/posters-lettering">
+          <p>prev one</p>
+        </Link>
+        <Link href="/design/eiu-housing-dining">
           <p>next one</p>
-        </div>
+        </Link>
+      </div>
       </Layout>
     </>
   );

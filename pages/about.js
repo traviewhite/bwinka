@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 const About = () => (
   <>
     <Head>
-      <title>Brooke Winka</title>
+      <title>About | Brooke Winka</title>
     </Head>
     
     <Layout>

@@ -7,7 +7,7 @@ const mainstyle = { overflow: `hidden` };
 const fineArt = () => (
   <>
     <Head>
-      <title>Brooke Winka</title>
+      <title>Fine Art | Brooke Winka</title>
     </Head>
     
     <Layout>

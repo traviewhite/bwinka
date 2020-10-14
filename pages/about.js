@@ -11,7 +11,7 @@ const About = () => (
     <Layout>
       <main>
         <div className="aboutwrapper">
-          <img src="https://res.cloudinary.com/bwinka/image/upload/v1602541155/brooke_and_maggie_w7ust5.png" alt="Brooke Winka and Maggie the dog"/>
+          <img src="https://res.cloudinary.com/bwinka/image/upload/v1602718696/brooke_headshot_crkqma.jpg" alt="Brooke Winka and Maggie the dog"/>
           <div className="description">
             <h2>
               <span>Hello!</span><br/>
@@ -25,7 +25,9 @@ const About = () => (
                 <a href="mailto:winkabrooke@gmail.com?Subject=Whats%20up!">EMAIL ME</a>
               </div>
               <div className="aboutbtn">
-                <a href="#">PORTFOLIO</a>
+                <Link href="/2020_Brooke-Winka-Portfolio.pdf">
+                  <a>PORTFOLIO</a>
+                </Link>
               </div>
             </div>
           </div>

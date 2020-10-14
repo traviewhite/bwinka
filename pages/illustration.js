@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import { motion } from 'framer-motion'
 
 const imageStyleCalendar = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613659/design/btn_covers/calendar2020btn_z11cwx.png"})` }
-const imageStyleAncientTale = { backgroundImage: `url(${""})` }
+const imageStyleAncientTale = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602716295/illustration/btn_covers/ancient-village-btn_wsryvc.png"})` }
 const imageStyleIllustrationGallery = { backgroundImage: `url(${""})` }
 
 const Illustration = () => (
@@ -16,7 +16,7 @@ const Illustration = () => (
     <Layout>
       <main>
         <div className="showcase">
-          <Link href="/illustration/2020-anniversary-calendar">
+          <Link href="/illustration/anniversary-calendar">
             <div style={imageStyleCalendar} className="item" ><h2>2020<br/>ANNIVERSARY<br/>CALENDAR</h2></div>
           </Link>
           <Link href="/illustration/ancient-village">

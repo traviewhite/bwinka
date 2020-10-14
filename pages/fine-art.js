@@ -11,13 +11,11 @@ const fineArt = () => (
     </Head>
     
     <Layout>
-      <main style={mainstyle}>
-        <div className="gallerywrapper">
+        <div style={mainstyle} className="gallerywrapper">
           <FineArt />
-        </div>          
-      </main>
+        </div>
     </Layout>
   </>
 )
   
-export default fineArt;
+export default fineArt

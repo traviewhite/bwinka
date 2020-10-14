@@ -1,12 +1,4 @@
-export const images = [
-  "https://res.cloudinary.com/bwinka/image/upload/v1602548662/design/posters/distressed-poster_llhpon.png",
-  "https://res.cloudinary.com/bwinka/image/upload/v1602548662/design/posters/W_P-poster_qlj4yq.png",
-  "https://res.cloudinary.com/bwinka/image/upload/v1602548898/design/posters/sloppy_l4v1kp.png",
-  "https://res.cloudinary.com/bwinka/image/upload/v1602548659/design/posters/winka-lettering_nvjnyz.png",
-  "https://res.cloudinary.com/bwinka/image/upload/v1602548659/design/posters/lookin-good_qzap1h.png",
-  "https://res.cloudinary.com/bwinka/image/upload/v1602548657/design/posters/go-to-town_unrvu7.png",
-  "https://res.cloudinary.com/bwinka/image/upload/v1602548656/design/posters/iamu_u2wkbg.png"
-];
+//design image data
 export const bwinkaSlide = [
   "https://res.cloudinary.com/bwinka/image/upload/v1602553987/design/bwinka/Front-Back-Mockup_k3wshk.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602553987/design/bwinka/BW-Design-Stylesheet_advyln.jpg",
@@ -61,14 +53,15 @@ export const portlandSlide = [
 ];
 export const postersSlide = [
   "https://res.cloudinary.com/bwinka/image/upload/v1602703484/design/posters/W_P-poster_qlj4yq.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1602716548/design/posters/waves-poster_mnrgwz.jpg",
   "https://res.cloudinary.com/bwinka/image/upload/v1602703416/design/posters/distressed-poster_llhpon.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602703514/design/posters/winka-lettering_nvjnyz.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602548659/design/posters/lookin-good_qzap1h.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602703288/design/posters/go-to-town_unrvu7.png",
-  "https://res.cloudinary.com/bwinka/image/upload/v1602548898/design/posters/sloppy_l4v1kp.png",
-  "",
-  ""
+  "https://res.cloudinary.com/bwinka/image/upload/v1602548898/design/posters/sloppy_l4v1kp.png"
 ];
+
+//fine art image data
 export const fineartSlide = [
   "https://res.cloudinary.com/bwinka/image/upload/v1602615704/fine_art/cross_tdvzi1.jpg",
   "https://res.cloudinary.com/bwinka/image/upload/v1602615708/fine_art/stacks_cenihg.jpg",
@@ -84,4 +77,61 @@ export const fineartSlide = [
   "https://res.cloudinary.com/bwinka/image/upload/v1602615702/fine_art/Dolly_s7ntxa.jpg",
   "https://res.cloudinary.com/bwinka/image/upload/v1602615701/fine_art/oil_smudge_exfjnx.jpg",
   "https://res.cloudinary.com/bwinka/image/upload/v1602615701/fine_art/coke_gunznw.jpg"
+];
+
+
+//illustration image data
+export const calendarSlide = [
+  "https://res.cloudinary.com/bwinka/image/upload/v1602715683/illustration/anniversary_calendar/Calendar_Mockup_oydoat.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1602715682/illustration/anniversary_calendar/august-september_h3sq2w.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1602715689/illustration/anniversary_calendar/januarysmall_drliyc.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1602715685/illustration/anniversary_calendar/Februarysmall_vbzwlo.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1602715690/illustration/anniversary_calendar/Marchsmall_fx0dlm.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1602715685/illustration/anniversary_calendar/Aprilsmall_fvxdde.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1602715689/illustration/anniversary_calendar/Maysmall_wsyctm.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1602715689/illustration/anniversary_calendar/Junesmall_copy_xxraso.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1602715686/illustration/anniversary_calendar/Julysmall_k3uw9o.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1602715685/illustration/anniversary_calendar/Augustsmall_z8prkz.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1602715690/illustration/anniversary_calendar/Septembersmall_gmi585.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1602715691/illustration/anniversary_calendar/October-small_jizgeu.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1602715689/illustration/anniversary_calendar/Novembersmall_jbumdj.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1602715684/illustration/anniversary_calendar/Decembersmall_nr9czx.png"
+];
+export const ancientvillageSlide = [
+  "https://res.cloudinary.com/bwinka/image/upload/v1602716162/illustration/ancient_village/workinprogress_rjevtu.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1602716163/illustration/ancient_village/cover-mockup_u5elza.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1602716163/illustration/ancient_village/banana-spread-mockup_fi4hmd.png"
+];
+export const illustrationSlide = [
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  ""
 ];

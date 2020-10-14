@@ -5,7 +5,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   .next,
   .prev {
     top: calc(50% - 20px);
@@ -34,19 +34,19 @@
   }
 }
 
-@media screen and (max-width: $breakpointDesktop) {
+@media screen and (max-width: $breakpointTablet) {
   .gallerywrapper {
-    padding: 0 2em;
+    padding: 0 2.2em;
     .next,
     .prev {
       width: 25px;
       height: 40px;
     }
     .next {
-      right: 0px;
+      right: 5px;
     }
     .prev {
-      left: 0px;
+      left: 5px;
     }
   }
 }

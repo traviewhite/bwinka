@@ -34,6 +34,8 @@
     line-height: 1.5;
   }
 }
+
+/*
 .design_img {
   display: flex;
   flex-direction: column;
@@ -49,10 +51,11 @@
     line-height: 1.5;
   }
 }
+*/
 
 .slide_wrapper {
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   padding: 1em 3em 1em;
   position: relative;
   display: flex;
@@ -63,10 +66,10 @@
   .prev {
     top: calc(50% - 20px);
     position: absolute;
-    background: $primary2Color;
+    background: $primary3Color;
     border-radius: 99px;
     width: 35px;
-    height: 35px;
+    height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +86,7 @@
   }
   img {
     max-width: 100%;
-    max-height: 80vh;
+    max-height: 90vh;
   }
 }
 
@@ -147,7 +150,7 @@
     padding: 0 3em;
     .next, .prev {
       width: 25px;
-      height: 25px;
+      height: 40px;
     }
     .next {
       position: absolute;

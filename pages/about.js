@@ -11,7 +11,7 @@ const About = () => (
     <Layout>
       <main>
         <div className="aboutwrapper">
-          <img src="https://res.cloudinary.com/bwinka/image/upload/v1602718696/brooke_headshot_crkqma.jpg" alt="Brooke Winka and Maggie the dog"/>
+          <img src="/brooke_headshot.jpg" alt="Brooke Winka and Maggie the dog"/>
           <div className="description">
             <h2>
               <span>Hello!</span><br/>

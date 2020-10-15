@@ -13,7 +13,9 @@ const MacDaddy = () => (
     <Layout>
       <div className="design_head">
         <h1>Mac Daddy's Identity<br/>& User Interface Design</h1>
-        <p>A clean and fun illustrated design for a Restaurant Branding concept.</p>
+        <p>This restaurant concept was an undergrad project that I decided to give a little facelift. Mac-and-cheese might be one of my favorite comfort foods, and I was trying to imagine if I could have a restaurant down the street from my house– what would I want it to be like?
+        New and fun? Yep. A little bit of an edge? Probably. Would there be cute illustrations of food I wanna eat everywhere? Absolutely. 
+        </p>
       </div>
       <div className="slide_wrapper">
         <SlideshowMac /> 

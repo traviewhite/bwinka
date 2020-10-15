@@ -1,8 +1,21 @@
 .homewrapper {
   margin: 0 0 10%;
+  h1 {
+    span {
+      font-size: 1.2em;
+    }
+  }
+  p {
+    max-width: 800px;
+  }
 }
 @media screen and (max-width: $breakpointPhone) {
   .homewrapper {
     margin: 0 0 30%;
+    h1 {
+      font-size: 3em;
+    }
+    p {
+    }
   }
 }

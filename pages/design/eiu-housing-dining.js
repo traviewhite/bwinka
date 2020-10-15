@@ -13,7 +13,10 @@ const EIUhousing = () => (
     <Layout>
       <div className="design_head">
         <h1>EIU Housing & Dining</h1>
-        <p>During my MA program at Eastern Illinois University, I had an assistantship with EIU Housing and Dining Services where I was in charge of creating brochures, postcards, posters, and various other print pieces for prospective students and students living on and off campus. I also supervised a team of design and marketing assistants.</p>
+        <p>I worked at EIU’s Housing and Dining Services as a Design Assistant before transitioning into a position as a Marketing Graduate Assistant during my MA Program. In the 2.5 years that I was there, I worked on various campaigns that encouraged students to live on campus and to get involved in their community.
+        </p>
+        <p>I created a range of print pieces including (but not exclusive to) flyers, brochures, postcards, posters, and booklets for prospective students and students living on and off-campus. I also supervised two Design Assistants. This opportunity taught me so much about marketing and design– from printing principles to how to work with a group of people to launch a successful campaign.
+        </p>
       </div>
       <div className="slide_wrapper">
         <SlideshowEIU /> 

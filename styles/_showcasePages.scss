@@ -9,10 +9,16 @@
   align-items: center;
   border-bottom: 2px solid $secondaryNavColor;
   text-align: center;
+  h1 {
+    margin: 0 0 0.6em;
+  }
   p {
     font-size: 1em;
-    max-width: 600px;
-    line-height: 1.5;
+    max-width: 650px;
+    margin: 0 0 1em;
+    line-height: 1.7;
+    text-align: justify;
+    text-align-last: center;
   }
 }
 .design_sub {
@@ -26,11 +32,13 @@
   align-items: center;
   text-align: center;
   h2 {
+    margin: 0 0 0.6em;
     font-size: 3em;
   }
   p {
     font-size: 1em;
     max-width: 600px;
+    margin: 0 0 1em;
     line-height: 1.5;
   }
 }

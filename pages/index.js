@@ -10,15 +10,11 @@ function Home () {
 
       <main>
         <div className="homewrapper">
-          <h1 className="">
-            Hello, I'm Brooke Winka!<br></br>
-            I love creating beautiful designs
-            for people to enjoy.
+          <h1>
+            Hello,<br/>
+            I'm Brooke Winka!<br/>
           </h1>
-          <p className="">
-            I'm a Graphic Designer who adores illustration,<br></br>
-            and is actively learing UX Design!
-          </p>
+          <p>I'm a Graphic Designer and Illustrator who loves creating designs for people to enjoy.</p>
         </div>
       </main>
       

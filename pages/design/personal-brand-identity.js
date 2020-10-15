@@ -13,8 +13,7 @@ const PersonalBrand = () => (
       <Layout>
         <div className="design_head">
           <h1>Brooke Winka Design</h1>
-          <p>During my MA program at Eastern Illinois University, I had an assistantship with EIU Housing and Dining Services where I was in charge of creating brochures, postcards, posters for prospective students and students living on and off campus.</p>
-          <p>I wanted my brand to reflect the principles that are fundamental to my design philosophy : clarity, personality,</p>
+          <p>This branding package is not too serious without compromising clarity or composure. I wanted my brand to be lighthearted, laid-back, simple, clean, and caring. Relaxing and stable forest green is paired with an energizing yellow-green, balancing one another out and giving off some serious playful, earthy, and chill vibes. A fun winking icon plays off of my last name and invites the viewer to get in touch– and maybe even make a new friend!</p>
         </div>
         <div className="slide_wrapper">
           <SlideshowBwinka /> 

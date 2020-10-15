@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/Layout'
 import { motion } from 'framer-motion'
+import { fadeIn, fadeInLeft, stagger } from '../components/MotionA'
 
 const imageStyleBrand = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613659/design/btn_covers/personaldesignbtn_zgj9x4.png"})` };
 const imageStyleEIU = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613659/design/btn_covers/eiubtn_tjboqa.png"})` };
@@ -18,26 +19,38 @@ const Design = () => (
 
     <Layout>
       <main>
-        <div className="showcase">
+        <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate' variants={stagger} className="showcase">
           <Link href="/design/personal-brand-identity">
-            <div style={imageStyleBrand} className="item" ><h2>PERSONAL<br/>IDENTITY<br/>DESIGN</h2></div>
+            <motion.div variants={fadeIn} style={imageStyleBrand} className="item" >
+              <motion.h2 variants={fadeInLeft}>PERSONAL<br/>IDENTITY<br/>DESIGN</motion.h2>
+            </motion.div>
           </Link>
           <Link href="/design/eiu-housing-dining">
-            <div style={imageStyleEIU} className="item"><h2>EIU HOUSING<br/>& DINING SERVICES</h2></div>
+            <motion.div variants={fadeIn} style={imageStyleEIU} className="item">
+              <motion.h2 variants={fadeInLeft}>EIU HOUSING<br/>& DINING SERVICES</motion.h2>
+            </motion.div>
           </Link>
           <Link href="/design/mac-daddy-identity">
-            <div style={imageStyleMacDad} className="item"><h2>MAC DADDY'S<br/>IDENTITY + USER<br/>INTERFACE</h2></div>
+            <motion.div variants={fadeIn} style={imageStyleMacDad} className="item">
+              <motion.h2 variants={fadeInLeft}>MAC DADDY'S<br/>IDENTITY + USER<br/>INTERFACE</motion.h2>
+            </motion.div>
           </Link>
           <Link href="/design/blueroom-magazine">
-            <div style={imageStyleBlueroom} className="item"><h2>BLUEROOM<br/>MAGAZINE</h2></div>
+            <motion.div variants={fadeIn} style={imageStyleBlueroom} className="item">
+              <motion.h2 variants={fadeInLeft}>BLUEROOM<br/>MAGAZINE</motion.h2>
+            </motion.div>
           </Link>
           <Link href="/design/portland-travel-guide">
-            <div style={imageStylePortland} className="item"><h2>PORTLAND, OREGON<br/>TRAVEL GUIDE</h2></div>
+            <motion.div variants={fadeIn} style={imageStylePortland} className="item">
+              <motion.h2 variants={fadeInLeft}>PORTLAND, OREGON<br/>TRAVEL GUIDE</motion.h2>
+            </motion.div>
           </Link>
           <Link href="/design/posters-lettering">
-            <div style={imageStylePosters} className="item"><h2>POSTERS +<br/>LETTERING</h2></div>
+            <motion.div variants={fadeIn} style={imageStylePosters} className="item">
+              <motion.h2 variants={fadeInLeft}>POSTERS +<br/>LETTERING</motion.h2>
+            </motion.div>
           </Link>
-        </div>
+        </motion.div>
       </main>
     </Layout>
   </>

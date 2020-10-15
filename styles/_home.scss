@@ -1,21 +1,19 @@
 .homewrapper {
   margin: 0 0 10%;
-  h1 {
-    span {
-      font-size: 1.2em;
-    }
-  }
+  text-align: center;
   p {
-    max-width: 800px;
+    font-size: 0.7em;
+    letter-spacing: 2.8px;
   }
 }
 @media screen and (max-width: $breakpointPhone) {
   .homewrapper {
     margin: 0 0 30%;
     h1 {
-      font-size: 3em;
+      font-size: 2.5em;
     }
     p {
+      font-size: 0.7em;
     }
   }
 }

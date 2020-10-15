@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/Layout'
 import { motion } from 'framer-motion'
+import { fadeIn, fadeInLeft, stagger } from '../components/MotionA'
 
 const imageStyleCalendar = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613659/design/btn_covers/calendar2020btn_z11cwx.png"})` }
 const imageStyleAncientTale = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602716295/illustration/btn_covers/ancient-village-btn_wsryvc.png"})` }
@@ -15,17 +16,23 @@ const Illustration = () => (
     
     <Layout>
       <main>
-        <div className="showcase">
+        <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate' variants={stagger} className="showcase">
           <Link href="/illustration/anniversary-calendar">
-            <div style={imageStyleCalendar} className="item" ><h2>2020<br/>ANNIVERSARY<br/>CALENDAR</h2></div>
+            <motion.div variants={fadeIn} style={imageStyleCalendar} className="item" >
+              <motion.h2 variants={fadeInLeft}>2020<br/>ANNIVERSARY<br/>CALENDAR</motion.h2>
+            </motion.div>
           </Link>
           <Link href="/illustration/ancient-village">
-            <div style={imageStyleAncientTale} className="item"><h2>THE TALE OF AN<br/>ANCIENT VILLAGE<br/><p>CHILDREN'S BOOK</p></h2></div>
+            <motion.div variants={fadeIn} style={imageStyleAncientTale} className="item">
+              <motion.h2 variants={fadeInLeft}>THE TALE OF AN<br/>ANCIENT VILLAGE<br/><p>CHILDREN'S BOOK</p></motion.h2>
+            </motion.div>
           </Link>
           <Link href="/illustration/illustration-gallery">
-            <div style={imageStyleIllustrationGallery} className="item"><h2>ILLUSTRATION<br/>GALLERY</h2></div>
+            <motion.div variants={fadeIn} style={imageStyleIllustrationGallery} className="item">
+              <motion.h2 variants={fadeInLeft}>ILLUSTRATION<br/>GALLERY</motion.h2>
+            </motion.div>
           </Link>
-        </div>
+        </motion.div>
       </main>
     </Layout>
   </>

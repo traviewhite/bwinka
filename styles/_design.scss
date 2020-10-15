@@ -1,11 +1,12 @@
 .showcase {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 800px;
   width: 100%;
   .item {
-    height: 180px;
+    height: 150px;
     width: 100%;
     margin: 1em 0;
     //background-image: url(../public/personalwebbutton.png);

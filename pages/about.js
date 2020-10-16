@@ -30,16 +30,16 @@ const About = () => (
           <div className="aboutbtn">
             <a href="mailto:winkabrooke@gmail.com?Subject=Whats%20up!">EMAIL</a>
           </div>
-          <div className="aboutbtn">
-            <Link href="/2020_Brooke-Winka-Portfolio.pdf">
+          <Link href="/2020_Brooke-Winka-Portfolio.pdf">
+            <div className="aboutbtn">
               <a>PORTFOLIO</a>
-            </Link>
-          </div>
-          <div className="aboutbtn">
-            <Link href="/2020_Brooke-Winka-Design-CV-Interactive.pdf">
+            </div>
+          </Link>
+          <Link href="/2020_Brooke-Winka-Design-CV-Interactive.pdf">
+            <div className="aboutbtn">
               <a>CV</a>
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
         <div className="socials">
           <Link href="https://www.instagram.com/btwinka">

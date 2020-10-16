@@ -13,7 +13,9 @@ const PosterLettering = () => (
     <Layout>
       <div className="design_head">
         <h1>2020 Illustrated<br/>Anniversary Calendar</h1>
-        <p>A non-traditional approach to a yearly calendar that celebrates a random anniversary every month.</p>
+        <p>
+          This design is a non-traditional approach to a yearly calendar that celebrates a random anniversary every month. I was super interested in introducing a new type of interaction to the traditional calendar. By leaving a large area of empty space on each page, I invite the user to jot down notes any way they like. I also was super interested in celebrating cool anniversaries that I thought were notable, for example– Adam Sandler’s 54th birthday and the first sale of the ballpoint pen.
+        </p>
       </div>
       <div className="slide_wrapper">
         <SlideshowCalendar /> 

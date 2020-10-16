@@ -11,9 +11,8 @@ const PosterLettering = () => (
     </Head>
     
     <Layout>
-      <div className="design_head">
+      <div className="design_sub">
         <h1>Illustration Gallery</h1>
-        <p>Gallery of Illustrations</p>
       </div>
       <div className="slide_wrapper">
         <SlideshowIllustration /> 

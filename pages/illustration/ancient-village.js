@@ -13,7 +13,9 @@ const AncientVillage = () => (
     <Layout>
       <div className="design_head">
         <h1>The Tale of an<br/>Ancient Village</h1>
-        <p>.</p>
+        <p>
+          (WIP) This children’s book is a very special project I’m currently working on! A friend of mine welcomed his first little kiddo into the world recently. He asked his grandmother for a story of their village in Jamaica to pass down to his son, and I was so honored when he asked me to create the illustrations to accompany this amazing story. Stay tuned!
+        </p>
       </div>
       <div className="slide_wrapper">
         <SlideshowAncientVillage /> 

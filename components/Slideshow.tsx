@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { wrap } from '@popmotion/popcorn'
 import { bwinkaSlide, eiuSlide, eiuSlide2, eiuSlide3, macSlide, blueroomSlide, portlandSlide, 
-  postersSlide, calendarSlide, ancientvillageSlide,  } from './image_data'
+  postersSlide, calendarSlide, ancientvillageSlide, illustrationSlide } from './image_data'
 
 const variants = {
   enter: () => {
@@ -498,7 +498,7 @@ export const SlideshowAncientVillage = () => {
 }
 export const SlideshowIllustration = () => {
   const [[page, direction], setPage] = useState([0, 0]);
-  const imageIndex = wrap(0, calendarSlide.length, page);
+  const imageIndex = wrap(0, illustrationSlide.length, page);
 
   const paginate = (newDirection: number) => {
     setPage([page + newDirection, newDirection]);
@@ -509,7 +509,7 @@ export const SlideshowIllustration = () => {
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
           key={page}
-          src={calendarSlide[imageIndex]}
+          src={illustrationSlide[imageIndex]}
           custom={direction}
           variants={variants}
           initial="enter"

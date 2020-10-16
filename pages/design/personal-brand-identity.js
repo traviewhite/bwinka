@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/Layout'
+import Layout, { PageNavNext, PageNavPrev } from '../../components/Layout'
 import { motion } from 'framer-motion'
 import { SlideshowBwinka } from '../../components/Slideshow'
 
@@ -21,10 +21,10 @@ const PersonalBrand = () => (
         
         <div className="page_nav_btn">
         <Link href="/design/posters-lettering">
-          <p>prev one</p>
+          <p>{PageNavPrev}</p>
         </Link>
         <Link href="/design/eiu-housing-dining">
-          <p>next one</p>
+          <p>{PageNavNext}</p>
         </Link>
       </div>
       </Layout>

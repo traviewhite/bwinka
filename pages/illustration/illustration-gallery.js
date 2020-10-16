@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/Layout'
+import Layout, { PageNavNext, PageNavPrev } from '../../components/Layout'
 import { motion } from 'framer-motion'
 import { SlideshowIllustration } from '../../components/Slideshow'
 
@@ -11,7 +11,7 @@ const PosterLettering = () => (
     </Head>
     
     <Layout>
-      <div className="design_sub">
+      <div className="design_head2">
         <h1>Illustration Gallery</h1>
       </div>
       <div className="slide_wrapper">
@@ -20,10 +20,10 @@ const PosterLettering = () => (
 
       <div className="page_nav_btn">
         <Link href="/illustration/ancient-village">
-          <p>prev one</p>
+          <p>{PageNavPrev}</p>
         </Link>
         <Link href="/illustration/anniversary-calendar">
-          <p>next one</p>
+          <p>{PageNavNext}</p>
         </Link>
       </div>
     </Layout>

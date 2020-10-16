@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/Layout'
+import Layout, { PageNavNext, PageNavPrev } from '../../components/Layout'
 import { motion } from 'framer-motion'
 import { SlideshowMac } from '../../components/Slideshow'
 
@@ -13,8 +13,9 @@ const MacDaddy = () => (
     <Layout>
       <div className="design_head">
         <h1>Mac Daddy's Identity<br/>& User Interface Design</h1>
-        <p>This restaurant concept was an undergrad project that I decided to give a little facelift. Mac-and-cheese might be one of my favorite comfort foods, and I was trying to imagine if I could have a restaurant down the street from my house– what would I want it to be like?
-        New and fun? Yep. A little bit of an edge? Probably. Would there be cute illustrations of food I wanna eat everywhere? Absolutely. 
+        <p>
+          This restaurant concept was an undergrad project that I decided to give a little facelift. Mac-and-cheese might be one of my favorite comfort foods, and I was trying to imagine if I could have a restaurant down the street from my house– what would I want it to be like?
+          New and fun? Yep. A little bit of an edge? Probably. Would there be cute illustrations of food I wanna eat everywhere? Absolutely. 
         </p>
       </div>
       <div className="slide_wrapper">
@@ -29,10 +30,10 @@ const MacDaddy = () => (
 
       <div className="page_nav_btn">
         <Link href="/design/eiu-housing-dining">
-          <p>prev one</p>
+          <p>{PageNavPrev}</p>
         </Link>
         <Link href="/design/blueroom-magazine">
-          <p>next one</p>
+          <p>{PageNavNext}</p>
         </Link>
       </div>
     </Layout>

@@ -21,6 +21,20 @@
     text-align-last: center;
   }
 }
+.design_head2 {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 4em 1em 1.5em;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  h1 {
+    margin: 0 0 0.6em;
+  }
+}
 .design_sub {
   display: flex;
   flex-direction: column;
@@ -129,7 +143,7 @@
     font-weight: 600;
     letter-spacing: -1px;
     margin: 0 2em;
-    padding: 5px 1.4em 10px;
+    padding: 7px 1.4em 10px;
     box-shadow: 1px 2px 3px 1px $primary2Color;
     animation: 1s ease;
     transition: 0.1s ease;
@@ -143,6 +157,13 @@
 @media screen and (max-width: $breakpointTablet) {
   .design_head {
     padding: 3em 1em;
+  }
+  .design_head2 {
+    padding: 3em 1em 0;
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
   }
   .design_sub {
     padding: 2em 1em 0;
@@ -178,6 +199,13 @@
 }
   
 @media screen and (max-width: $breakpointPhone) {
+  .design_head2 {
+    margin: 0;
+    padding: 3em 1em 0;
+    h1 {
+      font-size: 2.5em;
+    }
+  }
   .design_sub {
     h2 {
       font-size: 2em;

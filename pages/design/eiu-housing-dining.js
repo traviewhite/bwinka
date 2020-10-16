@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/Layout'
+import Layout, { PageNavNext, PageNavPrev } from '../../components/Layout'
 import { motion } from 'framer-motion'
 import { SlideshowEIU, SlideshowEIU2, SlideshowEIU3 } from '../../components/Slideshow'
 
@@ -38,10 +38,10 @@ const EIUhousing = () => (
 
       <div className="page_nav_btn">
         <Link href="/design/personal-brand-identity">
-          <p>prev one</p>
+          <p>{PageNavPrev}</p>
         </Link>
         <Link href="/design/mac-daddy-identity">
-          <p>next one</p>
+          <p>{PageNavNext}</p>
         </Link>
       </div>
     </Layout>

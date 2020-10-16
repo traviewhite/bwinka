@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/Layout'
+import Layout, { PageNavNext, PageNavPrev } from '../../components/Layout'
 import { motion } from 'framer-motion'
 import { SlideshowPosters } from '../../components/Slideshow'
 
@@ -11,9 +11,8 @@ const PosterLettering = () => (
     </Head>
     
     <Layout>
-      <div className="design_head">
+      <div className="design_head2">
         <h1>Posters & Lettering</h1>
-        <p>A non-traditional approach to a yearly calendar that celebrates a random anniversary every month. </p>
       </div>
       <div className="slide_wrapper">
         <SlideshowPosters /> 
@@ -21,10 +20,10 @@ const PosterLettering = () => (
 
       <div className="page_nav_btn">
         <Link href="/design/portland-travel-guide">
-          <p>prev one</p>
+          <p>{PageNavPrev}</p>
         </Link>
         <Link href="/design/personal-brand-identity">
-          <p>next one</p>
+          <p>{PageNavNext}</p>
         </Link>
       </div>
     </Layout>

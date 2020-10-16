@@ -88,8 +88,6 @@
   .prev {
     top: calc(50% - 20px);
     position: absolute;
-    background: $primary3Color;
-    border-radius: 99px;
     width: 35px;
     height: 55px;
     display: flex;
@@ -144,7 +142,7 @@
     letter-spacing: -1px;
     margin: 0 2em;
     padding: 7px 1.4em 10px;
-    box-shadow: 1px 2px 3px 1px $primary2Color;
+    box-shadow: 2px 2px 3px  $secondaryColor;
     animation: 1s ease;
     transition: 0.1s ease;
     &:hover {
@@ -156,7 +154,7 @@
 
 @media screen and (max-width: $breakpointTablet) {
   .design_head {
-    padding: 3em 1em;
+    padding: 3em 1.5em;
   }
   .design_head2 {
     padding: 3em 1em 0;
@@ -166,7 +164,7 @@
     }
   }
   .design_sub {
-    padding: 2em 1em 0;
+    padding: 2em 1.5em 0;
     h2 {
       font-size: 3em;
     }
@@ -190,7 +188,7 @@
       left: 10px;
     }
     img {
-      max-height: 80vh;
+      max-height: 90%;
     }
   }
   .showcase_imgwrap {
@@ -201,7 +199,7 @@
 @media screen and (max-width: $breakpointPhone) {
   .design_head2 {
     margin: 0;
-    padding: 3em 1em 0;
+    padding: 3em 1.5em 0;
     h1 {
       font-size: 2.5em;
     }
@@ -209,6 +207,20 @@
   .design_sub {
     h2 {
       font-size: 2em;
+    }
+  }
+  .slide_wrapper {
+    width: 100%;
+    height: 60vh;
+    padding: 0 1em;
+    .next {
+      right: 5px;
+    }
+    .prev {
+      left: 5px;
+    }
+    img {
+      max-height: 90%;
     }
   }
 }

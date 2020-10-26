@@ -6,19 +6,19 @@ const variants = {
     y: 0,
     opacity: 1,
     transition: {
-      y: { stiffness: 1000, velocity: -100 }
+      y: { stiffness: 1000, velocity: -100, ease: "easeIn" }
     }
   },
   closed: {
     y: 50,
     opacity: 0,
     transition: {
-      y: { stiffness: 1000 }
+      y: { stiffness: 1000, ease: "easeOut" }
     }
   }
-};
+}
 
-const totherightyougo = { marginLeft: `auto` };
+//const totherightyougo = { marginLeft: `auto` };
 
 const Links = () => (
   <>
@@ -40,9 +40,9 @@ const Links = () => (
       </Link>
     </motion.li>
     
-    <motion.li variants={variants}  style={totherightyougo}>
+    <motion.li variants={variants}>
       <Link href="/about">
-          <a className="aboutbtn">About/Contact</a>
+          <a className="aboutbtn">About</a>
       </Link>
     </motion.li>
   </>

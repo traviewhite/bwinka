@@ -20,11 +20,11 @@ const Design = () => (
     <Layout>
       <main>
         <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate' variants={stagger} className="showcase">
-          <Link href="/design/personal-brand-identity">
+          {/*<Link href="/design/personal-brand-identity">
             <motion.div variants={fadeIn} style={imageStyleBrand} className="item" >
               <motion.h2 variants={fadeInLeft}>PERSONAL<br/>IDENTITY<br/>DESIGN</motion.h2>
             </motion.div>
-          </Link>
+          </Link>*/}
           <Link href="/design/eiu-housing-dining">
             <motion.div variants={fadeIn} style={imageStyleEIU} className="item">
               <motion.h2 variants={fadeInLeft}>EIU HOUSING<br/>& DINING SERVICES</motion.h2>

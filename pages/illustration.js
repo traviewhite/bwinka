@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import { motion } from 'framer-motion'
 import { fadeIn, fadeInLeft, stagger } from '../components/MotionA'
 
-const imageStyleCalendar = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613659/design/btn_covers/calendar2020btn_z11cwx.png"})` }
+const imageStyleCalendar = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613659/illustration/btn_covers/calendar2020btn_z11cwx.png"})` }
 const imageStyleAncientTale = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602716295/illustration/btn_covers/ancient-village-btn_wsryvc.png"})` }
 const imageStyleIllustrationGallery = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602806871/illustration/btn_covers/spin-btn_tzk2lj.gif"})` }
 

@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "@popmotion/popcorn": "^0.4.4",
+    "@svgr/webpack": "^5.4.0",
+    "file-loader": "^6.1.1",
     "framer-motion": "^2.7.7",
     "next": "9.5.3",
+    "next-images": "^1.6.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "sass": "^1.26.11"

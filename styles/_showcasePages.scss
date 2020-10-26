@@ -134,7 +134,7 @@
   p {
     display: block;
     border-radius: 999px;
-    background-color: $primaryColor;
+    background-color: $secondary2Color;
     color: $primary3Color;
     text-align: center;
     font-size: 1em;
@@ -147,7 +147,7 @@
     transition: 0.1s ease;
     &:hover {
       cursor: pointer;
-      background-color: $secondary2Color;
+      background-color: $secondaryColor;
     }
   }
 }

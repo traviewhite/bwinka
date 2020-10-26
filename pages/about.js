@@ -35,7 +35,7 @@ const About = () => (
               <a>PORTFOLIO</a>
             </div>
           </Link>
-          <Link href="/2020_Brooke-Winka-Design-CV-Interactive.pdf">
+          <Link href="/2020_Brooke-Winka-Design_CV.pdf">
             <div className="aboutbtn">
               <a>CV</a>
             </div>

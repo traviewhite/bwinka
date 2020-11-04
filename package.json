@@ -13,7 +13,7 @@
 
     "export": "next export",
 
-    "deploy": "npm run build && npm run export"
+    "deploy": "npm run build && npm run deploy"
   },
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.19.26",

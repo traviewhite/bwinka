@@ -1,5 +1,4 @@
 const withImages = require('next-images')
-module.exports = withImages();
 
 module.exports = {
   target: "serverless",
@@ -7,6 +6,7 @@ module.exports = {
   devIndicators: {
     autoPrerender: false,
   },
+  withImages() {},
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
@@ -32,9 +32,5 @@ module.exports = {
   },
   images: {
     domains: ["res.cloudinary.com"],
-  },
-  i18n: {
-    locales: ['en'],
-    defaultLocale: 'en'
   },
 };

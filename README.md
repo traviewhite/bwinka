@@ -18,7 +18,7 @@ npm install / yarn install
 npm run dev / yarn dev
 ```
 
-### Build 😷
+### Build 😖
 
 ```
 npm run build / yarn build

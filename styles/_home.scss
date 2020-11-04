@@ -1,18 +1,16 @@
 .homewrapper {
+  @include media("<phone") {
+    padding: 0 0.5em;
+  }
   .home_logo {
-    background-image: url(../public/assets/home_desktop.svg);
+    background-image: url("https://res.cloudinary.com/bwinka/image/upload/v1604519739/design/bwinka/Desktop-Home_rjuxuh.svg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
     height: 75vh;
-  }
-}
-@media screen and (max-width: $breakpointPhone) {
-  .homewrapper {
-    padding: 0 0.5em;
-    .home_logo {
-      background-image: url(../public/assets/home_mobile.svg);
+    @include media("<phone") {
+      background-image: url("https://res.cloudinary.com/bwinka/image/upload/v1604519739/design/bwinka/NEW-MOBILEHOME_peoehz.svg");
       background-position: top center;
       height: 70vh;
     }

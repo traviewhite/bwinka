@@ -19,42 +19,37 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    @include media("<tablet") {
+      padding: 0;
+      height: 120px;
+      background-position: center right -45px;
+      background-size: 55%;
+    }
     h2 {
       color: $primary3Color;
       font-size: 1.6em;
       letter-spacing: 0.04px;
       line-height: 1;
       margin: 0 0 0 2.5em;
+      @include media("<tablet") {
+        margin: 0 0 0 2em;
+        font-size: 1.4em;
+      }
       p {
         color: $primary3Color;
         font-size: 0.6em;
         font-weight: 500;
         letter-spacing: 0.1px;
         margin: 8px 0 0;
+        @include media("<tablet") {
+          margin: 4px 0 0;
+        }
       }
     }
     &:hover {
       cursor: pointer;
       //box-shadow: 0 0 0 1pt $highlightColor inset;
       border: 1px solid $highlightColor;
-    }
-  }
-}
-
-@media screen and (max-width: $breakpointTablet) {
-  .showcase {
-    .item {
-      padding: 0;
-      height: 120px;
-      background-position: center right -45px;
-      background-size: 55%;
-      h2 {
-        margin: 0 0 0 2em;
-        font-size: 1.4em;
-        p {
-          margin: 4px 0 0;
-        }
-      }
     }
   }
 }

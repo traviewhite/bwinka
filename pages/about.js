@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import Layout from '../components/Layout'
 
 const About = () => (
@@ -11,7 +12,7 @@ const About = () => (
     <Layout>
       <main>
         <div className="aboutwrapper">
-          <img src="/brooke_headshot.jpg" alt="Brooke Winka and Maggie the dog"/>
+          <Image src="https://res.cloudinary.com/bwinka/image/upload/v1604526381/brooke_headshot_znbmpl.jpg" alt="Brooke Winka and Maggie the dog" unsized/>
           <div className="description">
             <h2>
               I'm Brooke Winka!

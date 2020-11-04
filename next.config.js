@@ -1,5 +1,6 @@
 const withImages = require('next-images')
 module.exports = withImages();
+
 module.exports = {
   devIndicators: {
     autoPrerender: false,
@@ -26,5 +27,12 @@ module.exports = {
         ],
       },
     ],
+  },
+  images: {
+    domains: ["res.cloudinary.com"],
+  },
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en'
   },
 };

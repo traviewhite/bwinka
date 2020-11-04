@@ -6,7 +6,7 @@ const variants = {
     y: 0,
     opacity: 1,
     transition: {
-      y: { stiffness: 1000, velocity: -100, ease: "easeIn" }
+      y: { stiffness: 1000, duration: 0.1, velocity: -100, ease: "easeIn" }
     }
   },
   closed: {

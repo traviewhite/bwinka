@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import { motion } from 'framer-motion'
 import { fadeIn, fadeInLeft, stagger } from '../components/MotionA'
 
-const imageStyleBrand = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613659/design/btn_covers/personaldesignbtn_zgj9x4.png"})` };
+const imageStyleBrand = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1604518831/design/btn_covers/personal_btn_new_l2hjug.png"})` };
 const imageStyleEIU = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613659/design/btn_covers/eiubtn_tjboqa.png"})` };
 const imageStyleMacDad = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613660/design/btn_covers/macdaddybtn_c2qxi2.png"})` };
 const imageStyleBlueroom = { backgroundImage: `url(${"https://res.cloudinary.com/bwinka/image/upload/v1602613659/design/btn_covers/blueroombtn_weu4qi.png"})` };
@@ -20,11 +20,11 @@ const Design = () => (
     <Layout>
       <main>
         <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate' variants={stagger} className="showcase">
-          {/*<Link href="/design/personal-brand-identity">
+          <Link href="/design/personal-brand-identity">
             <motion.div variants={fadeIn} style={imageStyleBrand} className="item" >
               <motion.h2 variants={fadeInLeft}>PERSONAL<br/>IDENTITY<br/>DESIGN</motion.h2>
             </motion.div>
-          </Link>*/}
+          </Link>
           <Link href="/design/eiu-housing-dining">
             <motion.div variants={fadeIn} style={imageStyleEIU} className="item">
               <motion.h2 variants={fadeInLeft}>EIU HOUSING<br/>& DINING SERVICES</motion.h2>
@@ -54,6 +54,6 @@ const Design = () => (
       </main>
     </Layout>
   </>
-)
+);
 
 export default Design

@@ -18,6 +18,7 @@
 *.pem
 /public/fine_art/*
 /public/design/*
+/public/illustration/*
 
 # debug
 npm-debug.log*

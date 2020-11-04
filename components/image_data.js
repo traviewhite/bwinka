@@ -1,38 +1,41 @@
 //design image data
+
+export const bwinkaHeader = "https://res.cloudinary.com/bwinka/image/upload/v1604506215/header/BWDesign_jtcsic.png";
 export const bwinkaSlide = [
+  "https://res.cloudinary.com/bwinka/image/upload/v1604519739/design/bwinka/Desktop-Home_rjuxuh.svg",
+  "https://res.cloudinary.com/bwinka/image/upload/v1604520039/design/bwinka/Stamp-Logo_tbhe0f.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1604519739/design/bwinka/Color-Palette_ncwvqo.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1604519740/design/bwinka/Business-Cards-Mockup_zjmg8h.png"
+];
+export const bwinka2Slide = [
   "https://res.cloudinary.com/bwinka/image/upload/v1602553987/design/bwinka/Front-Back-Mockup_k3wshk.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602553987/design/bwinka/BW-Design-Stylesheet_advyln.jpg",
   "https://res.cloudinary.com/bwinka/image/upload/v1602553987/design/bwinka/sticker_j4mhew.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602553984/design/bwinka/badge_ry0bhm.png"
 ];
+
+export const eiuHeader = "https://res.cloudinary.com/bwinka/image/upload/v1604506214/header/eiu_jnrhhf.png";
 export const eiuSlide = [
   "https://res.cloudinary.com/bwinka/image/upload/v1602703746/design/eiu/main/2019_GPAPoster-Final-01_xaicad.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602703746/design/eiu/main/2019_UHDSDiversityStatement_u0hsy1.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602703745/design/eiu/main/transfer-rackard_vwuao5.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602703745/design/eiu/main/brochure_rn9aao.png",
-  "https://res.cloudinary.com/bwinka/image/upload/v1602703745/design/eiu/main/2019_StudentIs-01_qtm8z8.png"
-];
-export const eiuSlide2 = [
-  "https://res.cloudinary.com/bwinka/image/upload/v1602703623/design/eiu/booklet/cover_j4h7lq.png",
-  "https://res.cloudinary.com/bwinka/image/upload/v1602703625/design/eiu/booklet/spread1_nxyues.png",
-  "https://res.cloudinary.com/bwinka/image/upload/v1602703624/design/eiu/booklet/spread2_oihikk.png",
-  "https://res.cloudinary.com/bwinka/image/upload/v1602703623/design/eiu/booklet/spread3_uozxks.png",
-  "https://res.cloudinary.com/bwinka/image/upload/v1602703623/design/eiu/booklet/spread4_cofhsp.png",
-  "https://res.cloudinary.com/bwinka/image/upload/v1602703623/design/eiu/booklet/spread5_mjquam.png",
-  "https://res.cloudinary.com/bwinka/image/upload/v1602703624/design/eiu/booklet/spread6_lp3evf.png"
-];
-export const eiuSlide3 = [
-  "https://res.cloudinary.com/bwinka/image/upload/v1602703613/design/eiu/allergen/allergenfriendlystation_mg3eyd.png",
-  "https://res.cloudinary.com/bwinka/image/upload/v1602703613/design/eiu/allergen/allergenfriendlystation2_nzgao6.png",
-  "https://res.cloudinary.com/bwinka/image/upload/v1602703613/design/eiu/allergen/Purple-Allergen-icons_uu7ivq.png"
-];
+  "https://res.cloudinary.com/bwinka/image/upload/v1602703745/design/eiu/main/2019_StudentIs-01_qtm8z8.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1604373786/design/eiu/booklet/cover_j4h7lq.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1604373610/design/eiu/Admissions-Booklet-Spreads_mqe8f6.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1604373648/design/eiu/Allergen-Friendly-Together_zvtg5j.png"
+]
+
+export const macHeader = "https://res.cloudinary.com/bwinka/image/upload/v1604506212/header/macdaddys_z9tyi5.png";
 export const macSlide = [
-  "https://res.cloudinary.com/bwinka/image/upload/v1602703788/design/mac_daddy/businesscard-mockup_rd2qr7.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1604424064/design/mac_daddy/businesscard-mockup_rd2qr7.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602703789/design/mac_daddy/2020-Mac-Daddys-logo_jafmji.png",
-  "https://res.cloudinary.com/bwinka/image/upload/v1602703791/design/mac_daddy/MacDaddysTakeout_xnuhnc.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1604424023/design/mac_daddy/MacDaddysTakeout_xnuhnc.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602703788/design/mac_daddy/mobile-mockups_qvfrmh.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602703788/design/mac_daddy/Together-Mobile_mfi6t7.png"
 ];
+
+export const blueroomHeader = "https://res.cloudinary.com/bwinka/image/upload/v1604506216/header/blueroom_oarlmb.png";
 export const blueroomSlide = [
   "https://res.cloudinary.com/bwinka/image/upload/v1602703538/design/blueroom/br_kavozw.gif",
   "https://res.cloudinary.com/bwinka/image/upload/v1602703536/design/blueroom/blueroom-button_cuyvad.png",
@@ -43,6 +46,8 @@ export const blueroomSlide = [
   "https://res.cloudinary.com/bwinka/image/upload/v1602703538/design/blueroom/glenn_ihiuip.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602703536/design/blueroom/br-sm_fivrab.png"
 ];
+
+export const portlandHeader = "https://res.cloudinary.com/bwinka/image/upload/v1604506217/header/portland_qzgf0v.png";
 export const portlandSlide = [
   "https://res.cloudinary.com/bwinka/image/upload/v1602703805/design/portland/Cover-1_wpmbeu.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602703805/design/portland/eatanddrink-spread_czeizt.png",
@@ -51,6 +56,8 @@ export const portlandSlide = [
   "https://res.cloudinary.com/bwinka/image/upload/v1602703805/design/portland/wheretostay-spread_tmcuun.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602703804/design/portland/shopping-spread_wzmmzv.png"
 ];
+
+export const postersHeader = "https://res.cloudinary.com/bwinka/image/upload/v1604361934/header/Posters_efapds.jpg";
 export const postersSlide = [
   "https://res.cloudinary.com/bwinka/image/upload/v1602703484/design/posters/W_P-poster_qlj4yq.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602716548/design/posters/waves-poster_mnrgwz.jpg",
@@ -81,6 +88,8 @@ export const fineartSlide = [
 
 
 //illustration image data
+
+export const calendarHeader = "https://res.cloudinary.com/bwinka/image/upload/v1604506213/header/calendar_tlryy7.png";
 export const calendarSlide = [
   "https://res.cloudinary.com/bwinka/image/upload/v1602715683/illustration/anniversary_calendar/Calendar_Mockup_oydoat.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602715682/illustration/anniversary_calendar/august-september_h3sq2w.png",
@@ -97,11 +106,15 @@ export const calendarSlide = [
   "https://res.cloudinary.com/bwinka/image/upload/v1602715689/illustration/anniversary_calendar/Novembersmall_jbumdj.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602715684/illustration/anniversary_calendar/Decembersmall_nr9czx.png"
 ];
+
+export const villageHeader = "https://res.cloudinary.com/bwinka/image/upload/v1604361932/header/Ancient-Village_gjzsww.jpg";
 export const ancientvillageSlide = [
   "https://res.cloudinary.com/bwinka/image/upload/v1602716162/illustration/ancient_village/workinprogress_rjevtu.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602716163/illustration/ancient_village/cover-mockup_u5elza.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602716163/illustration/ancient_village/banana-spread-mockup_fi4hmd.png"
 ];
+
+export const illustrationHeader = "";
 export const illustrationSlide = [
   "https://res.cloudinary.com/bwinka/image/upload/v1602804257/illustration/illustration_gallery/2020-GrilledCheese_oecqri.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602804258/illustration/illustration_gallery/snakes-me_dg4d82.jpg",

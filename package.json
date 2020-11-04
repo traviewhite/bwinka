@@ -10,14 +10,17 @@
     "start": "next start"
   },
   "dependencies": {
+    "@brainhubeu/react-carousel": "^1.19.26",
     "@popmotion/popcorn": "^0.4.4",
     "@svgr/webpack": "^5.4.0",
+    "dragscroll": "0.0.8",
     "file-loader": "^6.1.1",
     "framer-motion": "^2.7.7",
-    "next": "9.5.3",
+    "include-media": "^1.4.9",
+    "next": "^10.0.0",
     "next-images": "^1.6.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "sass": "^1.26.11"
   },
   "devDependencies": {

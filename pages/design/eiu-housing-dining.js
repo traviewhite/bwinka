@@ -1,25 +1,76 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import Layout, { PageNavNext, PageNavPrev } from '../../components/Layout'
 import { motion } from 'framer-motion'
-import { SlideshowEIU, SlideshowEIU2, SlideshowEIU3 } from '../../components/Slideshow'
+import { fadeIn, fadeInLeft, stagger } from '../../components/MotionA'
+import { eiuHeader, eiuSlide } from '../../components/image_data'
+//import { SlideshowEIU, SlideshowEIU2, SlideshowEIU3 } from '../../components/Slideshow'
 
 const EIUhousing = () => (
   <>
     <Head>
       <title>EIU Housing & Dining Services</title>
+      <script src="https://res.cloudinary.com/bwinka/raw/upload/v1604523949/dragscroll_dsqotx.js" />
     </Head>
     
     <Layout>
-      <div className="design_head">
-        <h1>EIU Housing & Dining</h1>
-        <p>I worked at EIU’s Housing and Dining Services as a Design Assistant before transitioning into a position as a Marketing Graduate Assistant during my MA Program. In the 2.5 years that I was there, I worked on various campaigns that encouraged students to live on campus and to get involved in their community.
-        </p>
-        <p>I created a range of print pieces including (but not exclusive to) flyers, brochures, postcards, posters, and booklets for prospective students and students living on and off-campus. I also supervised two Design Assistants. This opportunity taught me so much about marketing and design– from printing principles to how to work with a group of people to launch a successful campaign.
-        </p>
+      <div className="showcase_header">
+        <Image src={eiuHeader} unsized alt="EIU" />
       </div>
+
+      <motion.div className="design_head" exit={{ opacity: 0 }} initial='initial' animate='animate' variants={stagger}>
+        
+        <motion.div variants={fadeIn} className="project_overview">
+          <h4>PROJECT OVERVIEW</h4>
+          <h1>EIU Housing & Dining</h1>
+          <hr/>
+          <p>
+            I worked at EIU’s Housing and Dining Services as a Design Assistant before transitioning into a position as a Marketing Graduate Assistant during my MA Program. 
+            In the 2.5 years that I was there, I worked on various campaigns that encouraged students to live on campus and to get involved in their community.
+          </p>
+          <p>
+            I created a range of print pieces including (but not exclusive to) flyers, brochures, postcards, posters, and booklets for prospective students and students living on and off-campus. 
+            I also supervised two Design Assistants. This opportunity taught me so much about marketing and design– from printing principles to how to work with a group of people to launch a successful campaign.
+          </p>
+        </motion.div>
+        
+        <motion.div variants={fadeInLeft} className="deliverable_overview">
+          <h4>DELIVERABLES</h4>
+          <div className="delv_sect"> 
+            <section>
+              <h5>
+                Print
+              </h5>
+              <p>
+                Flyers • Posters • Postcards • Hanging Signs • 
+                Window Clings • Brochures
+              </p>
+            </section>
+            <section>
+              <h5>
+                Digital
+              </h5>
+              <p>
+                Social Media Posts • Email Headers • 
+                Website Graphics • Interactive Forms
+              </p>
+            </section>
+          </div>
+        </motion.div>
+
+      </motion.div>
+
+      <hr/>
+
+      <div className="slide dragscroll">
+        {eiuSlide.map((imgSrc, index) => (
+          <Image src={imgSrc} key={index} unsized />
+        ))}
+      </div>
+
+      {/*
       <div className="slide_wrapper">
-        <SlideshowEIU /> 
       </div>
       <div className="design_sub">
         <h2>2020 Admissions Booklet</h2>
@@ -36,6 +87,20 @@ const EIUhousing = () => (
         <SlideshowEIU3 /> 
       </div>
 
+
+        <img src='https://source.unsplash.com/random/1000x900' />
+        <img src='https://source.unsplash.com/random/1000x600' />
+        <img src='https://source.unsplash.com/random/900x600' />
+        <img src='https://source.unsplash.com/random/700x600' />
+        <img src='https://source.unsplash.com/random/800x600' />
+        <img src='https://source.unsplash.com/random/400x600' />
+        <img src='https://source.unsplash.com/random/1200x500' />
+        <img src='https://source.unsplash.com/random/1000x700' />
+        <img src='https://source.unsplash.com/random/1000x600' />
+        <img src='https://source.unsplash.com/random/600x600' />
+
+      */}
+      
       <div className="page_nav_btn">
         <Link href="/design/personal-brand-identity">
           <p>{PageNavPrev}</p>
@@ -46,6 +111,6 @@ const EIUhousing = () => (
       </div>
     </Layout>
   </>
-)
+);
 
 export default EIUhousing

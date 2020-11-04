@@ -10,12 +10,7 @@ $highlightColor: #DBFFEB;
 
 $fontStack: ivystyle-sans,sans-serif;
 
-$breakpointPhoneSm: 480px;
-$breakpointPhone: 620px;
-$breakpointTablet: 768px;
-$breakpointDesktop: 990px;
-$breakpointDesktopLg: 1260px;
-
+@import "./include-media";
 @import "./type-tags";
 @import "./navbar";
 @import "./home";
@@ -40,4 +35,23 @@ main {
   max-width: 980px;
   width: 100%;
   height: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: $primary3Color;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primaryColor;
+  border-radius: 2px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $primary2Color;
 }

@@ -2,7 +2,7 @@ import { easeIn, easeInOut, easeOut } from '@popmotion/popcorn'
 
 export const fadeIn = {
   initial: {
-    y: 20,
+    y: 30,
     opacity: 0
   },
   animate: {

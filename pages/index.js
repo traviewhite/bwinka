@@ -5,7 +5,8 @@ function Home () {
   return (
     <Layout>
       <Head>
-          <title>Brooke Winka</title>
+        <title>Brooke Winka</title>
+        <script src="https://res.cloudinary.com/bwinka/raw/upload/v1604523949/dragscroll_dsqotx.js" />
       </Head>
 
       <main>

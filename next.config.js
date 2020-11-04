@@ -2,6 +2,7 @@ const withImages = require('next-images')
 module.exports = withImages();
 
 module.exports = {
+  distDir: 'build',
   devIndicators: {
     autoPrerender: false,
   },
@@ -15,7 +16,7 @@ module.exports = {
     });
 
     return config;
-  },  
+  },
   module: {
     rules: [
       {

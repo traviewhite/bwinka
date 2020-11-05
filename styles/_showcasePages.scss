@@ -12,8 +12,10 @@
     min-height: 250px;
   }
   img {
-    max-width: 1200px;
+    width: 100%;
+    //max-width: 1200px;
     object-fit: contain;
+    object-position: top;
   }
 }
 .design_head {

@@ -15,7 +15,7 @@ const AncientVillage = () => (
     
     <Layout>
       <div className="showcase_header">
-        <Image src={villageHeader} unsized alt="The Tale of an Ancient Village" />
+        <img src={villageHeader} unsized alt="The Tale of an Ancient Village" />
       </div>
 
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate' variants={stagger} className="design_head">
@@ -25,7 +25,7 @@ const AncientVillage = () => (
           <h1>The Tale of an<br/>Ancient Village</h1>
           <hr/>
           <p>
-            (WIP) This children’s book is a very special project I’m currently working on! A friend of mine welcomed his first little kiddo into the world recently. He asked his grandmother for a story of their village in Jamaica to pass down to his son, and I was so honored when he asked me to create the illustrations to accompany this amazing story. Stay tuned!
+            (WIP) A children’s book that happens to be a very special project I’m currently working on! A friend of mine welcomed his first little kiddo into the world recently. He asked his grandmother for a story of their village in Jamaica to pass down to his son, and I was so honored when he asked me to create the illustrations to accompany this amazing story. Stay tuned!
           </p>
         </motion.div>
 
@@ -34,21 +34,9 @@ const AncientVillage = () => (
           <div className="delv_sect"> 
             <section>
               <h5>
-                Print
+                Print<br/>
+                Illustration<br/>
               </h5>
-              <p>
-                Flyers • Posters • Postcards • Hanging Signs • 
-                Window Clings • Brochures
-              </p>
-            </section>
-            <section>
-              <h5>
-                Digital
-              </h5>
-              <p>
-                Social Media Posts • Email Headers • 
-                Website Graphics • Interactive Forms
-              </p>
             </section>
           </div>
         </motion.div>
@@ -59,7 +47,7 @@ const AncientVillage = () => (
       
       <div className="slide dragscroll">
         {ancientvillageSlide.map((imgSrc, index) => (
-          <Image src={imgSrc} key={index} unsized />
+          <img src={imgSrc} key={index} unsized />
         ))}
       </div>
 

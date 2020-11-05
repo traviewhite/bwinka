@@ -15,7 +15,7 @@ const PersonalBrand = () => (
     
     <Layout>
       <div className="showcase_header">
-        <Image src={bwinkaHeader} unsized alt="Brooke Winka Brand Identity" />
+        <img src={bwinkaHeader} unsized alt="Brooke Winka Brand Identity" />
       </div>
 
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate' variants={stagger} className="design_head">
@@ -25,10 +25,10 @@ const PersonalBrand = () => (
           <h1>Brooke Winka Design</h1>
           <hr/>
           <p>
-            This branding package is not too serious without compromising clarity or composure. 
-            I wanted my brand to be lighthearted, laid-back, simple, clean, and caring. 
-            Relaxing and stable forest green is paired with an energizing yellow-green, balancing one another out and giving off some serious playful, earthy, and chill vibes. 
-            A fun winking icon plays off of my last name and invites the viewer to get in touch– and maybe even make a new friend!
+            Not too serious without compromising clarity or composure. 
+            This branding package is lighthearted, clean, and caring. 
+            A variety of youthful and active colors ensure that I have the freedom to explore color in my collateral and illustrations while still considering visual cohesion.
+            I opted for a clean san-serif so attention wouldn’t be drawn away from my other projects when they are paired together.
           </p>
         </motion.div>
 
@@ -37,21 +37,11 @@ const PersonalBrand = () => (
           <div className="delv_sect"> 
             <section>
               <h5>
-                Print
+                Branding<br/>
+                Collateral<br/>
+                Illustration<br/>
+                Web Design<br/>
               </h5>
-              <p>
-                Flyers • Posters • Postcards • Hanging Signs • 
-                Window Clings • Brochures
-              </p>
-            </section>
-            <section>
-              <h5>
-                Digital
-              </h5>
-              <p>
-                Social Media Posts • Email Headers • 
-                Website Graphics • Interactive Forms
-              </p>
             </section>
           </div>
         </motion.div>
@@ -62,7 +52,7 @@ const PersonalBrand = () => (
 
       <div className="slide dragscroll">
       {bwinkaSlide.map((imgSrc, index) => (
-        <Image src={imgSrc} key={index} unsized />
+        <img src={imgSrc} key={index} unsized />
       ))}
       </div>
       

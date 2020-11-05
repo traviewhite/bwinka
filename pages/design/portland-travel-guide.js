@@ -15,7 +15,7 @@ const PortlandTravel = () => (
     
     <Layout>
       <div className="showcase_header">
-        <Image src={portlandHeader} unsized alt="Portland Travel Guide" />
+        <img src={portlandHeader} unsized alt="Portland Travel Guide" />
       </div>
       
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate' variants={stagger} className="design_head">
@@ -25,9 +25,7 @@ const PortlandTravel = () => (
           <h1>Portland, Oregon<br/>Travel Guide</h1>
           <hr/>
           <p>
-            This was a design project I worked on during my undergrad where I was challenged to create a Travel Guide without relying on imagery. 
-            I chose to work with blues to embody the hazy nature of the port city, while personalized lettering offers a little extra personality. 
-            This stylish booklet dodges the over-saturated promotional pictures and directs the reader straight to the places that make this city the unique place that it is.
+            Another undergrad project where I was challenged to create a Travel Guide without relying on imagery.  The blues in this design embody the hazy nature of the port city, while personalized lettering offers a little extra personality. This stylish booklet dodges the over-saturated promotional pictures and directs the reader straight to the places that make this city the unique place that it is. 
           </p>
         </motion.div>
 
@@ -36,21 +34,9 @@ const PortlandTravel = () => (
           <div className="delv_sect"> 
             <section>
               <h5>
-                Print
+                Print<br/>
+                Lettering<br/>
               </h5>
-              <p>
-                Flyers • Posters • Postcards • Hanging Signs • 
-                Window Clings • Brochures
-              </p>
-            </section>
-            <section>
-              <h5>
-                Digital
-              </h5>
-              <p>
-                Social Media Posts • Email Headers • 
-                Website Graphics • Interactive Forms
-              </p>
             </section>
           </div>
         </motion.div>
@@ -61,7 +47,7 @@ const PortlandTravel = () => (
       
       <div className="slide dragscroll">
         {portlandSlide.map((imgSrc, index) => (
-          <Image src={imgSrc} key={index} unsized />
+          <img src={imgSrc} key={index} unsized />
         ))}
       </div>
 

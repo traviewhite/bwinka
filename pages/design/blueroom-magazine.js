@@ -15,7 +15,7 @@ const BlueroomMag = () => (
     
     <Layout>
       <div className="showcase_header">
-        <Image src={blueroomHeader} unsized alt="BLUEROOM" />
+        <img src={blueroomHeader} unsized alt="BLUEROOM" />
       </div>
 
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate' variants={stagger} className="design_head">
@@ -25,10 +25,8 @@ const BlueroomMag = () => (
           <h1>BLUEROOM Magazine</h1>
           <hr/>
           <p>
-            I served as the Vice President, Social Media Coordinator, and Co-Editor of the 2018-2019 Blue Room Magazine Team after serving as a member of the 2017-2018 team. Blue Room Magazine is a student-run art magazine that operates out of the Doudna Fine Arts Center at Eastern Illinois University.
-          </p>
-          <p>
-            Blue Room’s goal is to feature student artists attending EIU, give student designers out of the classroom design experience, and to give the rest of campus a look at what’s going on inside of the Art Department.  During this year, I oversaw the creative direction and physical production of the magazine as well as created social media graphics and managed all social media accounts.
+            A student-run art magazine that features student artists attending EIU, gives student designers out of the classroom design experience and grants the rest of EIU a look at what’s going on inside of the Art Department. 
+            During the 2018-2019 school year, I oversaw the creative direction and physical production of the magazine as well as created social media graphics and managed social media accounts. 
           </p>
         </motion.div>
 
@@ -37,21 +35,11 @@ const BlueroomMag = () => (
           <div className="delv_sect"> 
             <section>
               <h5>
-                Print
+                Print<br/>
+                Layout<br/>
+                Social Media<br/>
+                Copy Editor<br/>
               </h5>
-              <p>
-                Flyers • Posters • Postcards • Hanging Signs • 
-                Window Clings • Brochures
-              </p>
-            </section>
-            <section>
-              <h5>
-                Digital
-              </h5>
-              <p>
-                Social Media Posts • Email Headers • 
-                Website Graphics • Interactive Forms
-              </p>
             </section>
           </div>
         </motion.div>
@@ -62,7 +50,7 @@ const BlueroomMag = () => (
       
       <div className="slide dragscroll">
         {blueroomSlide.map((imgSrc, index) => (
-          <Image src={imgSrc} key={index} unsized />
+          <img src={imgSrc} key={index} unsized />
         ))}
       </div>
 

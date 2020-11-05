@@ -14,7 +14,7 @@ const fineArt = () => (
 
       <div className="slide dragscroll">
         {fineartSlide.map((imgSrc, index) => (
-          <Image src={imgSrc} key={index} unsized />
+          <img src={imgSrc} key={index} unsized />
         ))}
       </div>
         

@@ -6,6 +6,12 @@ module.exports = {
   devIndicators: {
     autoPrerender: false,
   },
+  /*
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en'
+  },
+  */
   withImages() {},
   webpack(config) {
     config.module.rules.push({

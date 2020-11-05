@@ -16,7 +16,7 @@ const EIUhousing = () => (
     
     <Layout>
       <div className="showcase_header">
-        <Image src={eiuHeader} unsized alt="EIU" />
+        <img src={eiuHeader} unsized alt="EIU" />
       </div>
 
       <motion.div className="design_head" exit={{ opacity: 0 }} initial='initial' animate='animate' variants={stagger}>
@@ -26,12 +26,8 @@ const EIUhousing = () => (
           <h1>EIU Housing & Dining</h1>
           <hr/>
           <p>
-            I worked at EIU’s Housing and Dining Services as a Design Assistant before transitioning into a position as a Marketing Graduate Assistant during my MA Program. 
-            In the 2.5 years that I was there, I worked on various campaigns that encouraged students to live on campus and to get involved in their community.
-          </p>
-          <p>
-            I created a range of print pieces including (but not exclusive to) flyers, brochures, postcards, posters, and booklets for prospective students and students living on and off-campus. 
-            I also supervised two Design Assistants. This opportunity taught me so much about marketing and design– from printing principles to how to work with a group of people to launch a successful campaign.
+            Faithfully following the EIU Brand Guideline, this opportunity pushed me to learn to create unique designs that stood by themselves while still adhering to specific design instructions. 
+            Working on the UHDS Marketing Team taught me so much about marketing and design– from printing principles to how to work with a group of people to launch a successful campaign. 
           </p>
         </motion.div>
         
@@ -65,7 +61,7 @@ const EIUhousing = () => (
 
       <div className="slide dragscroll">
         {eiuSlide.map((imgSrc, index) => (
-          <Image src={imgSrc} key={index} unsized />
+          <img src={imgSrc} key={index} unsized />
         ))}
       </div>
 

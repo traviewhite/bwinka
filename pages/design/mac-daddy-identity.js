@@ -15,7 +15,7 @@ const MacDaddy = () => (
     
     <Layout>
       <div className="showcase_header">
-        <Image src={macHeader} unsized alt="Mac Daddy" />
+        <img src={macHeader} unsized alt="Mac Daddy" />
       </div>
 
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate' variants={stagger} className="design_head">
@@ -25,8 +25,7 @@ const MacDaddy = () => (
           <h1>Mac Daddy's Identity<br/>& User Interface Design</h1>
           <hr/>
           <p>
-            This restaurant concept was an undergrad project that I decided to give a little facelift. Mac-and-cheese might be one of my favorite comfort foods, and I was trying to imagine if I could have a restaurant down the street from my house– what would I want it to be like?
-            New and fun? Yep. A little bit of an edge? Probably. Would there be cute illustrations of food I wanna eat everywhere? Absolutely. 
+            An undergrad project that I gave a little facelift post-grad. Delicious doodles and bright cheesy colors let you know this mac-and-cheese joint doesn’t try to be anything it’s not. Soft san-serifs are comforting and easy on the eyes, just like your fav comfort food.  
           </p>
         </motion.div>
 
@@ -35,21 +34,11 @@ const MacDaddy = () => (
           <div className="delv_sect"> 
             <section>
               <h5>
-                Print
+                Branding<br/>
+                Packaging<br/>
+                Illustration<br/>
+                Web Design<br/>
               </h5>
-              <p>
-                Flyers • Posters • Postcards • Hanging Signs • 
-                Window Clings • Brochures
-              </p>
-            </section>
-            <section>
-              <h5>
-                Digital
-              </h5>
-              <p>
-                Social Media Posts • Email Headers • 
-                Website Graphics • Interactive Forms
-              </p>
             </section>
           </div>
         </motion.div>
@@ -60,7 +49,7 @@ const MacDaddy = () => (
       
       <div className="slide dragscroll">
         {macSlide.map((imgSrc, index) => (
-          <Image src={imgSrc} key={index} unsized />
+          <img src={imgSrc} key={index} unsized />
         ))}
       </div>
 
@@ -68,7 +57,7 @@ const MacDaddy = () => (
         <h2>Desktop Website Design</h2>
       </div>
       <div className="showcase_imgwrap">
-        <Image src="https://res.cloudinary.com/bwinka/image/upload/v1602703789/design/mac_daddy/2020-Mac-Daddys-Web-Mockups_qn0nss.png" alt="Mac Daddy Website Mockup" unsized/>
+        <img src="https://res.cloudinary.com/bwinka/image/upload/v1602703789/design/mac_daddy/2020-Mac-Daddys-Web-Mockups_qn0nss.png" alt="Mac Daddy Website Mockup" unsized/>
       </div>
 
       <div className="page_nav_btn">

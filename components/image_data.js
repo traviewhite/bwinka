@@ -2,7 +2,7 @@
 
 export const bwinkaHeader = "https://res.cloudinary.com/bwinka/image/upload/v1604506215/header/BWDesign_jtcsic.png";
 export const bwinkaSlide = [
-  "https://res.cloudinary.com/bwinka/image/upload/v1604519739/design/bwinka/Desktop-Home_rjuxuh.svg",
+  "https://res.cloudinary.com/bwinka/image/upload/v1604534779/design/bwinka/bwdesign_jyoirf.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1604520039/design/bwinka/Stamp-Logo_tbhe0f.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1604519739/design/bwinka/Color-Palette_ncwvqo.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1604519740/design/bwinka/Business-Cards-Mockup_zjmg8h.png"
@@ -91,8 +91,8 @@ export const fineartSlide = [
 
 export const calendarHeader = "https://res.cloudinary.com/bwinka/image/upload/v1604506213/header/calendar_tlryy7.png";
 export const calendarSlide = [
-  "https://res.cloudinary.com/bwinka/image/upload/v1602715683/illustration/anniversary_calendar/Calendar_Mockup_oydoat.png",
-  "https://res.cloudinary.com/bwinka/image/upload/v1602715682/illustration/anniversary_calendar/august-september_h3sq2w.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1604535056/illustration/anniversary_calendar/Calendar_Mockup_oydoat.png",
+  "https://res.cloudinary.com/bwinka/image/upload/v1604535106/illustration/anniversary_calendar/august-september_h3sq2w.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602715689/illustration/anniversary_calendar/januarysmall_drliyc.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602715685/illustration/anniversary_calendar/Februarysmall_vbzwlo.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602715690/illustration/anniversary_calendar/Marchsmall_fx0dlm.png",
@@ -109,7 +109,7 @@ export const calendarSlide = [
 
 export const villageHeader = "https://res.cloudinary.com/bwinka/image/upload/v1604361932/header/Ancient-Village_gjzsww.jpg";
 export const ancientvillageSlide = [
-  "https://res.cloudinary.com/bwinka/image/upload/v1602716162/illustration/ancient_village/workinprogress_rjevtu.png",
+  //"https://res.cloudinary.com/bwinka/image/upload/v1602716162/illustration/ancient_village/workinprogress_rjevtu.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602716163/illustration/ancient_village/cover-mockup_u5elza.png",
   "https://res.cloudinary.com/bwinka/image/upload/v1602716163/illustration/ancient_village/banana-spread-mockup_fi4hmd.png"
 ];

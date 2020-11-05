@@ -14,14 +14,14 @@ const PosterLettering = () => (
     </Head>
     
     <Layout>
-      
+      {/*
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate' variants={stagger} className="design_head">
 
         <motion.div variants={fadeIn} className="project_overview">
           <h4>PROJECT OVERVIEW</h4>
           <h1>Illustration Gallery</h1>
         </motion.div>
-
+        
         <motion.div variants={fadeInLeft} className="deliverable_overview">
           <h4>DELIVERABLES</h4>
           <div className="delv_sect"> 
@@ -50,9 +50,11 @@ const PosterLettering = () => (
 
       <hr/>
       
+      */}
+      
       <div className="slide dragscroll">
         {illustrationSlide.map((imgSrc, index) => (
-          <Image src={imgSrc} key={index} unsized />
+          <img src={imgSrc} key={index} unsized />
         ))}
       </div>
 

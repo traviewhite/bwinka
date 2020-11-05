@@ -15,7 +15,7 @@ const AnniversaryCalendar = () => (
     
     <Layout>
       <div className="showcase_header">
-        <Image src={calendarHeader} unsized alt="Illustrated Anniversary Calendar" />
+        <img src={calendarHeader} unsized alt="Illustrated Anniversary Calendar" />
       </div>
       
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate' variants={stagger} className="design_head">
@@ -25,7 +25,7 @@ const AnniversaryCalendar = () => (
           <h1>2020 Illustrated<br/>Anniversary Calendar</h1>
           <hr/>
           <p>
-            This design is a non-traditional approach to a yearly calendar that celebrates a random anniversary every month. I was super interested in introducing a new type of interaction to the traditional calendar. By leaving a large area of empty space on each page, I invite the user to jot down notes any way they like. I also was super interested in celebrating cool anniversaries that I thought were notable, for example– Adam Sandler’s 54th birthday and the first sale of the ballpoint pen.
+            A non-traditional approach to a yearly calendar that celebrates a random anniversary every month. By leaving a large area of empty space on each page, I invite the user to jot down notes any way they like. TBH, I really just wanted a cool calendar that celebrated the world’s most esteemed anniversaries, for example– Adam Sandler’s 54th birthday and the first sale of the ballpoint pen.
           </p>
         </motion.div>
 
@@ -34,21 +34,9 @@ const AnniversaryCalendar = () => (
           <div className="delv_sect"> 
             <section>
               <h5>
-                Print
+                Print<br/>
+                Illustration<br/>
               </h5>
-              <p>
-                Flyers • Posters • Postcards • Hanging Signs • 
-                Window Clings • Brochures
-              </p>
-            </section>
-            <section>
-              <h5>
-                Digital
-              </h5>
-              <p>
-                Social Media Posts • Email Headers • 
-                Website Graphics • Interactive Forms
-              </p>
             </section>
           </div>
         </motion.div>
@@ -59,7 +47,7 @@ const AnniversaryCalendar = () => (
       
       <div className="slide dragscroll">
         {calendarSlide.map((imgSrc, index) => (
-          <Image src={imgSrc} key={index} unsized />
+          <img src={imgSrc} key={index} unsized />
         ))}
       </div>
 

@@ -7,7 +7,6 @@ const fineArt = () => (
   <>
     <Head>
       <title>Fine Art | Brooke Winka</title>
-      <script src="https://res.cloudinary.com/bwinka/raw/upload/v1604523949/dragscroll_dsqotx.js" />
     </Head>
     
     <Layout>

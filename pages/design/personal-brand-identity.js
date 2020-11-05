@@ -1,3 +1,4 @@
+import {useEffect} from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -10,7 +11,6 @@ const PersonalBrand = () => (
   <>
     <Head>
       <title>Personal Brand Identity</title>
-      <script src="https://res.cloudinary.com/bwinka/raw/upload/v1604523949/dragscroll_dsqotx.js" />
     </Head>
     
     <Layout>
@@ -51,9 +51,9 @@ const PersonalBrand = () => (
       <hr/>
 
       <div className="slide dragscroll">
-      {bwinkaSlide.map((imgSrc, index) => (
-        <img src={imgSrc} key={index} unsized />
-      ))}
+        {bwinkaSlide.map((imgSrc, index) => (
+          <img src={imgSrc} key={index} unsized />
+        ))}
       </div>
       
       <div className="page_nav_btn">
@@ -66,6 +66,6 @@ const PersonalBrand = () => (
     </div>
     </Layout>
   </>
-);
+)
 
 export default PersonalBrand;

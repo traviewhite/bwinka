@@ -16,7 +16,6 @@ export default () => (
     <meta property="og:image" content="https://res.cloudinary.com/bwinka/image/upload/v1602718696/brooke_headshot_crkqma.jpg" />
 
     
-
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <link rel="stylesheet" href="https://use.typekit.net/quc4tia.css" />
 
@@ -26,7 +25,5 @@ export default () => (
     <link rel="manifest" href="../favicon/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c"/>
     <meta name="theme-color" content="#131313"/>
-
-    <script src="https://res.cloudinary.com/bwinka/raw/upload/v1604523949/dragscroll_dsqotx.js" />
   </Head>
 )

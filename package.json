@@ -14,9 +14,13 @@
     "postbuild": "next-on-netlify"
   },
   "dependencies": {
-    "@brainhubeu/react-carousel": "^1.19.26",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@popmotion/popcorn": "^0.4.4",
     "@svgr/webpack": "^5.4.0",
+    "contentful": "^8.1.7",
     "dragscroll": "0.0.8",
     "file-loader": "^6.1.1",
     "framer-motion": "^2.7.7",
@@ -24,8 +28,12 @@
     "next": "^10.0.0",
     "next-images": "^1.6.0",
     "next-on-netlify": "^2.6.0",
+    "next-seo": "^4.17.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-images": "^1.1.7",
+    "react-markdown": "^5.0.3",
+    "react-photo-gallery": "^8.0.0",
     "sass": "^1.26.11"
   },
   "devDependencies": {

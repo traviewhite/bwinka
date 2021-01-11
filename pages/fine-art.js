@@ -1,24 +1,24 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Layout from '../components/Layout'
-import { fineartSlide } from '../components/image_data'
+// import Head from 'next/head'
+// import Image from 'next/image'
+// import Layout from '../components/Layout'
+// import { fineartSlide } from '../components/image_data'
 
-const fineArt = () => (
-  <>
-    <Head>
-      <title>Fine Art | Brooke Winka</title>
-    </Head>
+// const fineArt = () => (
+//   <>
+//     <Head>
+//       <title>Fine Art | Brooke Winka</title>
+//     </Head>
     
-    <Layout>
+//     <Layout>
 
-      <div className="slide dragscroll">
-        {fineartSlide.map((imgSrc, index) => (
-          <img src={imgSrc} key={index} unsized />
-        ))}
-      </div>
+//       <div className="slide dragscroll">
+//         {fineartSlide.map((imgSrc, index) => (
+//           <img src={imgSrc} key={index} unsized />
+//         ))}
+//       </div>
         
-    </Layout>
-  </>
-)
+//     </Layout>
+//   </>
+// )
   
-export default fineArt
+// export default fineArt

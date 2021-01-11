@@ -1,0 +1,151 @@
+.info-wrapper {
+  margin: 0 auto;
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  @include media("<tablet") {
+    flex-direction: column;
+    margin: 1rem auto 0;
+  }
+  img {
+    width: 340px;
+    height: auto;
+    object-fit: cover;
+    object-position: center top;
+    margin: 0 3rem 0 0;
+    @include media("<desktop") {
+      margin: 1rem auto;
+      width: 280px;
+    }
+    @include media("<tablet") {
+      margin: 0 auto 1.75rem;
+      width: 350px;
+    }
+    @include media("<phone") {
+      width: 100%;
+    }
+  }
+  .description {
+    width: 100%;
+    @include media("<desktop") {
+      padding: 1rem 0 0 2rem;
+    }
+    @include media("<tablet") {
+      padding: 0;
+    }
+    @include media("<phone") {
+    }
+    h2 {
+      font-family: $fontStack2;
+      font-size: 3.5rem;
+      letter-spacing: -2px;
+      @include media("<desktop") {
+        font-size: 3rem;
+        margin: 0 auto;
+      }
+      @include media("<tablet") {
+        font-size: 3rem;
+        text-align: center;
+      }
+      @include media("<phone") {
+        font-size: 2.75rem;
+      }
+    }
+    .info-paragraph {
+      max-width: 500px;
+      @include media("<tablet") {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      @include media("<phone") {
+        padding: 0 1rem;
+      }
+      p {
+        column-gap: 40px;
+        font-size: 0.9em;
+        line-height: 2;
+        letter-spacing: -.05px;
+        margin: 2em 0 0 0;
+        text-align: justify;
+        @include media("<desktop") {
+          font-size: 0.9em;
+          margin: 2em 0 0 0;
+        }
+        @include media("<tablet") {
+          font-size: 1em;
+          margin: 2em 0 0 0;
+          text-align-last: center;
+        }
+      }
+    }
+  }
+}
+.info-btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto 0;
+  max-width: 300px;
+  width: 100%;
+  color: $--gray-1;
+  font-family: $fontStack2;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: -0.5px;
+  @include media("<phone") {
+    margin: 3rem auto 1.5rem;
+  }
+  .info-btn {
+    display: block;
+    margin: 2.5rem auto;
+    animation: 1s ease;
+    transition: 0.1s ease;
+    &:hover {
+      color: $--purple-1;
+    }
+  }
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: auto;
+  padding: 1.5rem 0 0;
+  @include media("<tablet") {
+    padding: 0;
+  }
+  a {
+    margin: 0 0.9rem;
+    font-size: 1.5rem;
+    color: $--gray-1;
+    animation: 0.1s ease;
+    transition: ease 0.05s;
+    // cursor: pointer;
+    &:hover {
+      transform: translateY(-1px);
+      color: $--purple-1
+    }
+    @include media("<tablet") {
+      margin: 1em 0.75em;
+    }
+  }
+}
+.info-divide {
+  max-width: 800px;
+  width: 90%;
+  margin: 3rem auto 0;
+  @include media("<tablet") {
+    width: 75%;
+    margin: 2.5rem auto;
+  }
+  @include media("<tablet") {
+    width: 80%;
+    // margin: 2rem auto;
+  }
+}

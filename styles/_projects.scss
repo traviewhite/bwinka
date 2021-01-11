@@ -1,0 +1,24 @@
+.showcase {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .item {
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem;
+    @include media("<=phone") {
+      width: 100%;
+      height: auto;
+      margin: 1rem auto;
+    }
+    img {
+      width: 100%;
+      height: 15rem;
+      object-fit: cover;
+      @include media("<=phone") {
+        height: auto;
+      }
+    }
+  }
+}

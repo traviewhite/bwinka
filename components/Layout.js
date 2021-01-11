@@ -1,18 +1,16 @@
-import Head from '../components/Head'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import useScript from '../components/useScript'
+import GlobalHead from 'components/GlobalHead'
+import Navbar from 'components/Navbar'
+import Footer from 'components/Footer'
+import useScript from 'components/useScript'
 
-export const PageNavNext = ('Next Project')
-export const PageNavPrev = ('Previous Project')
+export const ClientName = 'Brooke Winka'
 
 const Layout = ({ children })  => {
-
-  useScript('https://res.cloudinary.com/bwinka/raw/upload/v1604523949/dragscroll_dsqotx.js');
-
+  useScript('https://res.cloudinary.com/bwinka/raw/upload/v1604523949/dragscroll_dsqotx.js')
+  
   return (
     <>
-      <Head />
+      <GlobalHead />
       <div className="container">
         <Navbar />
         {children}

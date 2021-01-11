@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Footer = () => (
   <>
-    <footer className="gone">
+    <footer>
       <Link href='/'>
         <a/>
       </Link>

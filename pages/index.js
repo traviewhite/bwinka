@@ -1,22 +1,30 @@
-import Layout from '../components/Layout'
 import Head from 'next/head'
+import Layout, { ClientName } from 'components/Layout'
+import GalleryGridIndex from 'components/GalleryGridIndex'
+import { client } from 'utils/contentfulPosts'
 
-function Home () {
+export default function Home ({ post }) {
   return (
     <Layout>
       <Head>
-        <title>Brooke Winka</title>
-        <script src="https://res.cloudinary.com/bwinka/raw/upload/v1604523949/dragscroll_dsqotx.js" />
+        <title>{ClientName}</title>
       </Head>
-
       <main>
-        <div className="homewrapper">
-          <div className="home_logo" />
-        </div>
+        <GalleryGridIndex post={post} />
       </main>
-      
     </Layout>
   )
 }
 
-export default Home
+export async function getStaticProps() {
+  let data = await client.getEntries({
+    content_type: 'galleryPost',
+  })
+
+  return {
+    props: {
+      post: await data.items ?? null,
+    },
+    revalidate: 1,
+  }
+}

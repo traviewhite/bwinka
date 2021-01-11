@@ -1,10 +1,14 @@
 const withImages = require('next-images')
+const path = require('path')
 
 module.exports = {
   target: "serverless",
   distDir: 'build',
   devIndicators: {
     autoPrerender: false,
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
   },
   /*
   i18n: {

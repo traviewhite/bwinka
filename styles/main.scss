@@ -1,6 +1,10 @@
-//$primaryColor: #026D67;
+$--white: #fff;
+$--gray-1: #5c6161;
+$--purple-1: #B26699;
+$--red-1: #EE4F42;
+$--background: #fff;
 $primaryColor: #5c6161;
-$primary2Color: #ea5f21;
+$primary2Color: #EC6F39;
 $primary3Color: #F8F1E6;
 $secondaryColor: #383D3D;
 $secondary2Color: #84ADAF;
@@ -8,17 +12,23 @@ $secondary3Color: #a6cccc;
 $secondaryNavColor: rgba(170, 163, 72, 0.4);
 $highlightColor: #DBFFEB;
 
+@font-face {
+  font-family: 'IvyMode';
+  src: url('https://res.cloudinary.com/bwinka/raw/upload/v1610132690/IvyMode-Regular_z2dmri.woff2') format('woff2');
+  src: url('https://res.cloudinary.com/bwinka/raw/upload/v1610132690/IvyMode-Regular_epgtyr.otf') format('opentype');
+}
+
+$fontStack2: 'IvyMode', serif;
 $fontStack: ivystyle-sans,sans-serif;
 
+@import "./globals";
 @import "./include-media";
 @import "./type-tags";
 @import "./navbar";
 @import "./home";
-@import "./about";
-@import "./design";
-@import "./illustration";
-@import "./showcasePages";
-@import "./gallery";
+@import "./projects";
+@import "./project-pages";
+@import "./info";
 @import "./footer";
 
 .container {
@@ -27,31 +37,43 @@ $fontStack: ivystyle-sans,sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0;
-}
-main {
-  margin: 0 auto;
-  padding: 0 1em;
-  max-width: 980px;
-  width: 100%;
-  height: auto;
+  align-items: center;
 }
 
-/* width */
+main {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+// width
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
-/* Track */
+// track
 ::-webkit-scrollbar-track {
-  background: $primary3Color;
+  background: $--background;
 }
-/* Handle */
+// handle
 ::-webkit-scrollbar-thumb {
-  background: $primaryColor;
-  border-radius: 2px;
+  background: $--gray-1;
 }
-/* Handle on hover */
+// handle on hover
 ::-webkit-scrollbar-thumb:hover {
-  background: $primary2Color;
+  background: $--purple-1;
+}
+
+// used when viewing images in the lightbox on the homepage
+.fullscreen {
+  img {
+    max-height: 85vh;
+  }
+}
+
+.error-404, .loading {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
 }

@@ -1,152 +1,45 @@
 nav {
-  margin: 0.5em auto 1.5em;
+  margin: 0 auto;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
   width: 100%;
-  //padding-bottom: 1em;
-  //box-shadow: 0px 3px 4px 0px $secondaryNavColor;
-  @include media("<phone") {
+  @include media("<tablet") {
+    padding: 2.25rem 0.5rem;
+    flex-direction: column;
   }
-  .homebtn {
-    margin: auto 0;
-    @include media("<phone") {
-      margin: auto auto auto 0;
-    }
-    .homebtnlogo {
+  a {
+    h1 {
       display: block;
-      //background-image: url(../public/assets/header_back.svg);
-      //background-size: cover;
-      //background-position: center right;
-      //background-repeat: no-repeat;
-      @include media("<phone") {
-        //background-position: center right;
-      }
-    }
-    img {
-      height: 2em;
-      width: auto;
-      margin: 1em 0px 0px 2em;
-      z-index: 2;
-      animation: 1s ease;
-      transition: 0.2s ease;
-      &:hover {
-        transform: translateX(3px);
-      }
+      color: black;
+      font-family: $fontStack2;
+      letter-spacing: -0.25px;
+      font-size: 2rem;
+      font-weight: 100;
       @include media("<tablet") {
-        height: 2em;
-      }
-      @include media("<phone") {
-        height: 2em;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
       }
     }
   }
-
-  .navbar {
+  ul {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    width: 100%;
-    a {
-      margin-right: 1.5em;
-      font-family: $fontStack;
-      font-weight: bold;
-      color: $primaryColor;
-      font-size: 1.2em;
-      letter-spacing: -0.5px;
-      animation: 1s ease;
-      transition: 0.1s ease;
-    }
-    a:hover {
-      color: $secondary2Color;
-      border-bottom: 2px solid $secondary2Color;
-      transform: translateY(1px);
-    }
-    .aboutbtn {
-      display: block;
-      padding: 7px 16px 9px;
-      margin: 0 2em 0 auto;
-      border-radius: 60px;
-      //box-shadow: 2px 2px 3px  $secondaryColor;
-      border: 2px solid $primaryColor;
-      color: $primaryColor;
-      font-size: 18px;
-      letter-spacing: -0.5px;
-      animation: 2s ease;
-      transition: 0.2s ease;
-      &:hover {
-        cursor: pointer;
-        border: 0px;
-        color: $primary3Color;
-        background-color: $primaryColor;
-        border: 2px solid $primaryColor;
+    font-family: $fontStack2;
+    li {
+      font-weight: 100;
+      color: grey;
+      letter-spacing: -0.05px;
+      font-size: 1.5rem;
+      margin: 0;
+      @include media("<tablet") {
+        font-size: 1.25rem;
+        margin: 0 0.5rem;
       }
     }
-  }
-  .mobilenavbar {
-    position: absolute;
-    height: auto;
-    max-width: 300px;
-    width: 100%;
-    padding: 3em 0;
-    top: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1em;
-    //background-color: $primaryColor;
-    //background-image: url(../public/assets/menubg.svg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    z-index: 99;
-    ul {
-      padding: 0 2em;
-      li {
-        //background-color: $primary2Color;
-        //border: 2px solid $primary2Color;
-        border-radius: 8px;
-        margin: 0.6em 0;
-        padding: 4px 0;
-        color: $primary3Color;
-        font-family: $fontStack;
-        font-size: 2.2em;
-        font-weight: bold;
-        text-align: center;
-        letter-spacing: -1px;
-        line-height: 1.5;
-        transition: 0.2s ease-out;
-        &:hover {
-          color: $secondary3Color;
-          //background-color: $primary2Color;
-        }
-      }
-    }
-  }/*
-  .new_ham {
-    height: 50px;
-    width: 60px;
-    margin: 0 1em 0 0;
-    background-image: url(../public/assets/menu.svg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
-    z-index: 998;
-    animation: 1s ease;
-    transition: 0.2s ease;
-    cursor: pointer;
-    &:hover {
-      transform: translateX(-2px);
-    }
-  }*/
-}
-
-li {
-  list-style: none;
-  cursor: pointer;
-  a {
-    display: block;
   }
 }
 
@@ -157,21 +50,23 @@ button {
   -moz-user-select: none;
   -ms-user-select: none;
   cursor: pointer;
-  position: absolute;
-  top: 18px;
-  right: 20px;
-  margin: 1em;
+  position: relative;
   width: auto;
   height: auto;
   background: transparent;
   z-index: 120;
 }
 
-/*@media screen and (min-width: $breakpointPhone) {
-  .navdisplay {
-    display: none;
+li {
+  list-style: none;
+  cursor: default;
+  a {
+    display: block;
+    cursor: pointer;
   }
-  .ham {
-    display: none;
-  }
-}*/
+}
+
+.active {
+  color: black;
+  // font-weight: 600;
+}
